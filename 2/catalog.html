@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <base href="https://htmlacademy-adaptive.github.io/2118115-sedona-26/2/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo logo">
+      <img class="logo__logo-image" src="./img/logo.svg" width="185px" height="96px" alt="Логотип сайта Седона">
+    </a>
+
+    <nav class="main-navigation">
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню навигации</span>
+      </button>
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item site-list__item--current">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a>
+            Фото и видео
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">
+            HTMLACADEMY
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="catalig-container">
+    <section class="intro">
+      <h1 class="visually-hidden">Фото и видео</h1>
+      <div class="intro__wrapper">
+        <h2 class="intro__title">Фото и видео</h2>
+        <p class="intro__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+    </section>
+    <section class="gallery">
+      <h2 class="visually-hidden">Фото-и видео-галерея</h2>
+      <div class="gallery__wrapper">
+        <div class="gallery__photo">
+          <figure class="gallery__image">
+            <img src="./img/vast.jpg" alt="Неродные просторы" width="280px" height="280px">
+            <figcaption class="gallery__image-description">Неродные просторы</figcaption>
+          </figure>
+          <p class="gallery__author">Автор фото: Борис</p>
+          <p class="gallery__like like">
+            <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/>
+            </svg>
+            <p class="like__amount">1350</p>
+          </p>
+        </div>
+        <div class="gallery__photo">
+          <figure class="gallery__image">
+            <img src="./img/vegetation.jpg" alt="Местная растительность" width="280px" height="280px">
+            <figcaption class="gallery__image-description">Местная растительность</figcaption>
+          </figure>
+          <p class="gallery__author">Автор фото: Сергей</p>
+          <p class="gallery__like like">
+            <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/>
+            </svg>
+            <p class="like__amount">143</p>
+          </p>
+        </div>
+        <div class="gallery__photo">
+          <figure class="gallery__image">
+            <img src="./img/northroad.jpg" alt="Дорога на север" width="280px" height="280px">
+            <figcaption class="gallery__image-description">Дорога на север</figcaption>
+          </figure>
+          <p class="gallery__author">Автор фото: Пётр</p>
+          <p class="gallery__like like">
+            <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/>
+            </svg>
+            <p class="like__amount">96</p>
+          </p>
+        </div>
+        <div class="gallery__photo">
+          <figure class="gallery__image">
+            <img src="./img/bridgeofdavil.jpg" alt="Мост Дьявола" width="280px" height="280px">
+            <figcaption class="gallery__image-description">Мост Дьявола</figcaption>
+          </figure>
+          <p class="gallery__author">Автор фото: Антон</p>
+          <p class="gallery__like like">
+            <svg class="like__icon" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".3" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" fill="#000"/>
+            </svg>
+            <p class="like__amount">254</p>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="video-presentation">
+      <h2 class="visually-hidden">Видеопрезентация</h2>
+      <div class="video-presentation__wrapper">
+        <h2 class="video-presentation__title title-big">Всё ещё сомневаетесь?</h2>
+        <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <img class="video-presentation__video-image" src="./img/videoimg.jpg" alt="Видеопрезентация Седоны" width="280px" height="177px">
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <h2 class="main-footer__title title-big">#VISITSEDONA</h2>
+      <ul class="main-footer__list">
+        <li class="social-networks__item social-networks">
+          <a class="social-networks__link" href="#">Вконтакте</a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="#">Телеграм</a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="#">YouTube</a>
+        </li>
+      </ul>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+              fill="#000" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
