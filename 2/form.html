@@ -55,30 +55,44 @@
       <form class="review-form__form form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="review-form__item your-name">
           <legend class="your-name__title">Представьтесь:</legend>
-          <label class="your-name__name"><small>Имя*:</small>
-            <input class="your-name__input-your-name" type="text" value="Пётр">
-          </label>
-          <label class="your-name__name"><small>Фамилия*:</small>
-            <input class="your-name__input-your-name" type="text" value="Пустота">
-          </label>
-          <label class="your-name__name"><small>Отчество:</small>
-            <input class="your-name__input-your-name" type="text" value="Викторович">
-          </label>
+          <ul class="your-name__list">
+            <li class="your-name__item">
+              <label class="your-name__name"><small>Имя*:</small>
+                <input class="your-name__input-your-name" type="text" value="Пётр">
+              </label>
+            </li>
+            <li class="your-name__item">
+              <label class="your-name__name"><small>Фамилия*:</small>
+                <input class="your-name__input-your-name" type="text" value="Пустота">
+              </label>
+            </li>
+            <li class="your-name__item">
+              <label class="your-name__name"><small>Отчество:</small>
+                <input class="your-name__input-your-name" type="text" value="Викторович">
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="review-form__item contacts">
           <legend class="contacts__title">Контактная информация:</legend>
-          <label class="contacts__name"><small>Контактный телефон*:</small>
-            <input class="contacts__input-contacts" type="tel" placeholder="Введите телефон">
-            <button class="contacts__form-button" type="submit">
-              <span class="visually-hidden">Телефон</span>
-            </button>
-          </label>
-          <label class="contacts__name"><small>Электронная почта*:</small>
-            <input class="contacts__input-contacts" type="email" placeholder="Введите e-mail">
-            <button class="contacts__form-button" type="submit">
-              <span class="visually-hidden">Электронная почта</span>
-            </button>
-          </label>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label class="contacts__name"><small>Контактный телефон*:</small>
+                <input class="contacts__input-contacts" type="tel" placeholder="Введите телефон">
+                <button class="contacts__form-button" type="submit">
+                  <span class="visually-hidden">Телефон</span>
+                </button>
+              </label>
+            </li>
+            <li class="contacts__item">
+              <label class="contacts__name"><small>Электронная почта*:</small>
+                <input class="contacts__input-contacts" type="email" placeholder="Введите e-mail">
+                <button class="contacts__form-button" type="submit">
+                  <span class="visually-hidden">Электронная почта</span>
+                </button>
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="review-form__item impression">
           <legend class="impression__title">Ваше общее впечатление:</legend>
