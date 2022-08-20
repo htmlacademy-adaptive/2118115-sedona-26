@@ -1,0 +1,32 @@
+@import "./mixins.scss";
+@import "./variable.scss";
+
+.search-hotel {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.search-hotel__wrapper {
+    margin: 38px 30px 32px 30px;
+    padding: 0;
+}
+
+.search-hotel__title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;   
+    margin: 0;
+    padding: 0; 
+}
+
+.search-hotel__description {
+    @include description-style-black;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.hotel-search__button {
+    margin: auto;
+}
