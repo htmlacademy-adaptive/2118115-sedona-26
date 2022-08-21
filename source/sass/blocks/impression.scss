@@ -1,0 +1,29 @@
+@import "./mixins.scss";
+
+.impression {
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 49px;
+    padding: 0;
+}
+
+.impression__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.impression__item {
+    margin-bottom: 16px;
+}
+
+.impression__title {
+    @include title-style-black;
+    margin-bottom: 20px;
+}
+
+.impression__variant {
+    @include title-style-black;
+    text-transform: none;
+}

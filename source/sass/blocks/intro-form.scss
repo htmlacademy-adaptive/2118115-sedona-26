@@ -1,0 +1,27 @@
+@import "./mixins.scss";
+
+.intro-form {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.intro-form__wrapper {
+    margin: 36px 20px 28px 20px;
+}
+
+.intro-form__title {
+    @include title-style-black;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.intro-form__description {
+    @include description-style-black;
+    margin: 0;
+    margin-bottom: 53px;
+    padding: 0;
+}

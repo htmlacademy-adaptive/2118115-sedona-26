@@ -1,0 +1,42 @@
+.your-name {
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.your-name__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.your-name__item {
+    margin-bottom: 16px;
+}
+
+.your-name__item:last-child {
+    margin-bottom: 64px;
+}
+
+.your-name__title {
+    @include title-style-black;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.your-name__name {
+    @include description-style-black;
+}
+
+.your-name__input-your-name {
+    width: 280px;
+    height: 58px;
+    border: none;
+    padding: 16px;
+    margin: 0;
+    box-sizing: border-box;
+    @include title-style-black;
+    background-color: #F2F2F2;
+}

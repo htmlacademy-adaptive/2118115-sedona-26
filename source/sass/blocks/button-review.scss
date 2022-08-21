@@ -1,0 +1,31 @@
+@import "./mixins.scss";
+
+.button-review {
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.button-review__button {
+    background-color: $main-color;
+    border: none;
+    padding: 18px 46px 13px 46px;
+}
+
+.button-reviev__text {
+    @include title-style-white;
+    text-transform: uppercase;
+}
+
+.button-review__legend {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    opacity: 60%;
+}

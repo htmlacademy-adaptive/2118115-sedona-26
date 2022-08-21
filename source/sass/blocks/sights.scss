@@ -1,0 +1,28 @@
+.sights {
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 49px;
+    padding: 0;
+    border: 0 none;
+}
+
+.sights__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sights__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.sights__title {
+    @include title-style-black;
+    margin-bottom: 20px;
+}
+
+.sights__variant {
+    @include title-style-black;
+    text-transform: none;
+}
