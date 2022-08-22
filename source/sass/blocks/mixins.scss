@@ -33,3 +33,20 @@
     background-color: $main-color;
     color: #ffffff;      
 }
+
+@mixin figcaption-title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    
+}
+
+@mixin figcaption-description {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: none;    
+}
