@@ -3,8 +3,8 @@
 @import "./blocks/logo.scss";
 @import "./blocks/main-navigation.scss";
 @import "./blocks/main-container.scss";
-@import "./blocks/vasually-hidden.scss";
-@import "./blocks/mixins.scss";
+@import "../sass/vasually-hidden.scss";
+@import "../sass/mixins.scss";
 @import "./blocks/font.scss";
 @import "./blocks/greeting.scss";
 @import "./blocks/intro.scss";
@@ -27,5 +27,5 @@
 @import "./blocks/button-review.scss";
 @import "./blocks/intro-catalog.scss";
 @import "./blocks/gallery.scss";
-@import "./blocks/video-presentation.scss"
-
+@import "./blocks/video-presentation.scss";
+@import "../sass/variable.scss";
