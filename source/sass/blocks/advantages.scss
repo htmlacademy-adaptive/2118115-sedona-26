@@ -1,0 +1,47 @@
+@import "../variable.scss";
+@import "../mixins.scss";
+
+.advantages {
+    font-family: inherit;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.advantages__list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.advantages__item {
+    background-color: $main-color;
+}
+
+.advantages__item:last-child {
+    padding-bottom: 24px;
+}
+
+.advantages__title {
+    @include title-style-white;
+    margin: 0;
+    margin-bottom: 11px;
+    padding: 0;
+}
+
+.advantages__number {
+    @include description-style-white;
+    margin: 0;
+    margin-bottom: 17px;
+    padding: 0;
+}
+
+.advantages__description {
+    @include description-style-white;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages__text-wrapper {
+    padding: 54px 22px 40px 16px;
+} 

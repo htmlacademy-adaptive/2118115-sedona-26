@@ -1,0 +1,44 @@
+@import "../mixins.scss";
+
+.gallery {
+    background-color: #ffffff;
+    color: #000000;
+    margin-bottom: 43px;
+}
+
+.gallery__list {
+    max-width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery__item {
+    max-width: 280px;
+    margin: 25px 20px;
+}
+
+.gallery__image {
+    margin: 0;
+    padding: 0;
+}
+
+.gallery__image-description {
+    @include figcaption-title;
+    margin-top: 15px;
+}    
+.gallery__author {
+    @include figcaption-description;
+    margin: 0;
+}
+
+.gallery__amount {
+    @include figcaption-title;
+    margin: 0;
+}
+
+.gallery__like {
+    margin: 0;
+}
+
+

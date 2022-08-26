@@ -1,0 +1,35 @@
+@import "../mixins.scss";
+
+.clarification-list {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.clarification-list__list {
+    margin: 0;
+    padding: 23px 18px 32px 18px;
+    list-style-type: none;
+}
+
+.clarification-list__item {
+    background-color: #ffffff;
+}
+
+.clarification-list__title {
+    @include title-style-black;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.clarification-list__description {
+    @include description-style-black;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 22px;
+}
+
+.clarification-list__wrapper {
+    margin: 0 15px 0 47px;
+}

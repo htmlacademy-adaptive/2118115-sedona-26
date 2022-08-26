@@ -1,0 +1,29 @@
+@import "../mixins.scss";
+
+.alter-item {
+    background-color: #EEEEEE;
+}
+
+.alter-item__title {
+    @include title-style-black;
+    margin: 0;
+    margin-bottom: 11px;
+    padding: 0;
+    padding-top: 24px;
+    background-color: #EEEEEE;
+}
+
+.alter-item__number {
+    @include description-style-black;
+    background-color: #EEEEEE;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 17px;
+}
+
+.alter-item__description {
+    @include description-style-black;
+    background-color: #EEEEEE;
+    margin: 0;
+}

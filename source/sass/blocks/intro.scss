@@ -1,0 +1,26 @@
+@import "../mixins.scss";
+
+.intro {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.intro__wrapper {
+    margin: 32px 20px 16px 18px;
+}
+
+.intro__title {
+    @include title-style-black;
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+}
+
+.intro__description {
+    @include description-style-black;
+    margin: 0;
+    padding: 0;
+}

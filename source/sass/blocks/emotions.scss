@@ -1,0 +1,27 @@
+@import "../mixins.scss";
+
+.emotions {
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 56px;
+    padding: 0;
+    border: 0 none;
+}
+
+.emotions__title {
+    @include title-style-black;
+    margin-bottom: 20px;
+}
+
+.emotions__emotions-input {
+    width: 279px;
+    height: 150px;
+    border: none;
+    @include title-style-black;
+    background-color: #F2F2F2;
+    color: #000000;
+    opacity: 30%;
+    padding: 16px;
+    box-sizing: border-box;
+}

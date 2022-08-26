@@ -1,0 +1,21 @@
+@import "../mixins.scss";
+
+.main-navigation {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.main-navigation__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @include title-style-black;
+    
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #81B3D2;
+    }
+}
+
+

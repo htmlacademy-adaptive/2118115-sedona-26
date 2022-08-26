@@ -1,0 +1,21 @@
+.video-presentation {
+    background-color: #ffffff;
+    color: #000000;
+    margin-bottom: 28px;
+}
+
+.video-presentation__wrapper {
+    margin: 43px 20px 28px 20px;
+}
+
+@import"../mixins.scss";
+
+.video-presentation__title {
+    @include title-style-black;
+    margin-bottom: 30px;
+}
+
+.video-presentation__description {
+    @include description-style-black;
+    margin-bottom: 38px;
+}

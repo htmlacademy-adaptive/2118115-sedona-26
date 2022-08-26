@@ -1,0 +1,13 @@
+@import "../mixins.scss";
+
+.copyright {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.copyright__text {
+    @include description-style-black;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}

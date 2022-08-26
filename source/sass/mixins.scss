@@ -1,0 +1,52 @@
+@mixin title-style-black {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #ffffff;
+    color: #000000;  
+}
+
+@mixin description-style-black {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: #ffffff;
+    color: #333333;      
+}
+
+@mixin title-style-white {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: $main-color;
+    color: #ffffff;  
+}
+
+@mixin description-style-white {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: $main-color;
+    color: #ffffff;      
+}
+
+@mixin figcaption-title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    
+}
+
+@mixin figcaption-description {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: none;    
+}

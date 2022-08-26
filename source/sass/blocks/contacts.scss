@@ -1,0 +1,43 @@
+@import "../mixins.scss";
+
+.contacts {
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 59px;
+    padding: 0;
+}
+
+.contacts__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__item {
+    margin-bottom: 16px;
+}
+
+.contacts__item:last-child {
+    margin: 0;
+}
+
+.contacts__title {
+    @include title-style-black;
+    margin-bottom: 20px;
+}
+
+.contacts__name {
+    @include description-style-black;
+}
+
+.contacts__input-contacts {
+    width: 280px;
+    height: 58px;
+    border: none;
+    padding: 16px;
+    margin: 0;
+    box-sizing: border-box;
+    @include title-style-black;
+    background-color: #F2F2F2;
+}
