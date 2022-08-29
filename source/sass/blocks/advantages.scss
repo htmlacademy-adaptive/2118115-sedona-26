@@ -5,21 +5,86 @@
     font-family: inherit;
     background-color: #ffffff;
     color: #000000;
+    width: 320px;
+
+    @media (min-width:$tablet-width) {
+        width: 768px;    
+    }
+    
+    @media (min-width:$desktop-width){
+        width: 1200px;
+    }    
 }
 
 .advantages__list {
-    width: 100%;
+    width: 320px;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        width: 768px;        
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 1200px;
+    }
+}    
+
+.advantages__sedona-img {
+    background-image: url("../../img/sedonastreet.jpg");
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 260px;
+    flex-grow: 1;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        background-image: url("../../img/sedonastreettablet.jpg");
+        width: 512px;
+        height: 256px;
+    }
+
+    @media (min-width:$desktop-width) {
+        background-image: url("../../img/desktopstreet.jpg");
+        width: 800px;
+        height: 256px;
+    }
+}        
+
+.advantages__bridge-img {
+    background-image: url("../../img/devilbridge.jpg");
+    width: 320px;
+    height: 260px;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        background-image: url("../../img/bridgetablet.jpg");
+        width: 512px;
+        height: 256px;
+    }
+
+    @media (min-width:$desktop-width) {
+        background-image: url("../../img/bridgedesktop.jpg");
+        width: 800px;
+        height: 256px;
+    }
 }
 
 .advantages__item {
     background-color: $main-color;
-}
+    text-align: center;
 
-.advantages__item:last-child {
-    padding-bottom: 24px;
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+    }
 }
 
 .advantages__title {
@@ -44,4 +109,16 @@
 
 .advantages__text-wrapper {
     padding: 54px 22px 40px 16px;
-} 
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width){
+        width: 256px;
+        box-sizing: border-box;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 400px;
+        padding: 47px 52px 56px 52px;
+    } 
+}    

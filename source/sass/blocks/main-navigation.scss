@@ -6,6 +6,7 @@
 }
 
 .main-navigation__list {
+    display: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -15,6 +16,13 @@
         text-decoration: none;
         color: #ffffff;
         background-color: #81B3D2;
+    }
+
+    @import "../variable.scss";
+
+    @media (min-width: $tablet-width) {
+        display: flex;       
+        justify-content: space-between; 
     }
 }
 

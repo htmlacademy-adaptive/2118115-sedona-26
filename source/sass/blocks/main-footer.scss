@@ -2,10 +2,41 @@
     background-color: #ffffff;
     color: #000000;
     font-family: inherit;
+    width: 320px;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        width: 768px;
+        height: 120px;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 1200px;
+    }
 }
 
 .main-footer__wrapper {
-    margin: 29px 82px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 120px;
+        align-items: center;
+        margin-left: 45px;
+        margin-right: 61px;
+    }
+
+    @media (min-width:$desktop-width) {
+        margin-left: 104px;
+        margin-right: 120px;
+    }
 }
 
 .main-footer__title {

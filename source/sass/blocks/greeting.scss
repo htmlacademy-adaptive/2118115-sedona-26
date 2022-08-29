@@ -1,9 +1,35 @@
+@import "../variable.scss";
+
 .greeting {
     background-image: url("../../img/backgroundwelcome.png");
     width: 320px;
     height: 389px;
+
+    @media (min-width: $tablet-width) {
+        background-image: url("../../img/backdesktop.jpg");      
+        width: 768px;
+        height: 518px;  
+    }
+
+    @media (min-width: $desktop-width) {
+        background-image: url("../../img/decktopback.jpg");
+        width: 1200px;
+        height: 518px;
+    }
 }
 
 .greeting__welcome {
     margin: 90px 19px 85px 19px;
+
+    @media (min-width: $tablet-width) {
+        width: 461px;
+        height: 360px;
+        margin: 77px 154px 91px 153px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 461px;
+        height: 360px;
+        margin: 77px 370px 90px 370px;
+    }    
 }
