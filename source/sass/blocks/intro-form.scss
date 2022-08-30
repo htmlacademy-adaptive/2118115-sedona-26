@@ -5,7 +5,18 @@
     color: #000000;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 320px; 
+    text-align: center;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        width: 768px;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 1200px;
+    }
 }
 
 .intro-form__wrapper {
