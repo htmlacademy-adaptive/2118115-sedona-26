@@ -1,0 +1,11 @@
+.item-image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        flex-direction: row;
+    }
+}

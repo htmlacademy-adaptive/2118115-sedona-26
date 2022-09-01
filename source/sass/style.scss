@@ -4,13 +4,13 @@
 @import "./blocks/main-navigation.scss";
 @import "./blocks/main-container.scss";
 @import "../sass/vasually-hidden.scss";
-@import "../sass/mixins.scss";
-@import "./blocks/font.scss";
+@import "./mixins.scss";
+@import "./font.scss";
 @import "./blocks/greeting.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/clarification-list.scss";
-@import "./blocks/alter-item.scss";
+@import "./blocks/alter.scss";
 @import "./blocks/search-hotel.scss";
 @import "./blocks/map.scss";
 @import "./blocks/main-footer.scss";
@@ -29,3 +29,4 @@
 @import "./blocks/gallery.scss";
 @import "./blocks/video-presentation.scss";
 @import "../sass/variable.scss";
+@import "./blocks/item-image.scss";

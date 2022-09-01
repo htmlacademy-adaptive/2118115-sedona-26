@@ -1,7 +1,19 @@
 .video-presentation {
     background-color: #ffffff;
     color: #000000;
+    width: 320px;
     margin-bottom: 28px;
+    text-align: center;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        width: 768px;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 1200px;
+    }
 }
 
 .video-presentation__wrapper {

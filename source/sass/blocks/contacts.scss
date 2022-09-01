@@ -3,15 +3,30 @@
 .contacts {
     background-color: #ffffff;
     color: #000000;
-    margin: 0;
-    margin-bottom: 59px;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        width: 298px;
+    }
+    @media (min-width:$desktop-width) {
+        width: 403px;
+        margin-left: 128px;
+        margin-right: 120px;
+    }
 }
 
 .contacts__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .contacts__item {
@@ -29,6 +44,14 @@
 
 .contacts__name {
     @include description-style-black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contacts__name small {
+    margin-left: 16px;
 }
 
 .contacts__input-contacts {

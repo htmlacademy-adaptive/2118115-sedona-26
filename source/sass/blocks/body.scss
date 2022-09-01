@@ -1,5 +1,4 @@
 body {
-    min-width: 320px;
     font-family:"PT Sans", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -7,6 +6,22 @@ body {
     text-transform: uppercase;
     background-color: #ffffff;
     color: #000000;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    text-align: center;
+    width: 320px;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        margin: 0 auto;
+        padding: 0;
+        width: 768px;
+    }
+
+    @media (min-width:$desktop-width) {
+        margin: 0 auto;
+        padding: 0;
+        width: 1280px;
+    }
 }

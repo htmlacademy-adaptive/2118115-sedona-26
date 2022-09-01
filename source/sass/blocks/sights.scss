@@ -3,20 +3,57 @@
 .sights {
     background-color: #ffffff;
     color: #000000;
-    margin: 0;
-    margin-bottom: 49px;
-    padding: 0;
-    border: 0 none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        width: 768px;
+        align-content: center;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 1280px;
+    }
 }
 
 .sights__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        flex-direction: row;
+        width: 480px;
+        align-content: center;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 960px;
+    }
 }
 
 .sights__item:not(:last-child) {
     margin-bottom: 16px;
+}
+
+.sights__item {
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+    width: 192px;
+    flex-grow: 1;
+    }
 }
 
 .sights__title {

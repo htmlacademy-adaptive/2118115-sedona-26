@@ -5,11 +5,25 @@
     color: #000000;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 320px;
+    
+@import "../variable.scss";
+
+@media (min-width:$tablet-width) {
+    width: 768px;    
+}
+
+@media (min-width:$desktop-width){
+    width: 1200px;
+}    
 }
 
 .intro__wrapper {
-    margin: 32px 20px 16px 18px;
+    margin: 32px 20px 32px 18px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .intro__title {

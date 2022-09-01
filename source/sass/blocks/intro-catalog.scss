@@ -3,18 +3,35 @@
 .intro-catalog {
     background-color: #ffffff;
     color: #000000;
-    margin: 37px 20px 50px 20px;
+    width: 320px;
     padding: 0;
+    text-align: center;
+    margin-top: 37px;
+    margin-bottom: 25px;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        width: 768px;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 1200px;
+    }
 }
 
 .intro-catalog__title {
     @include title-style-black;
+    margin: 0;
     margin-bottom: 24px;
-    margin-top: 37px;
 }
 
 .intro-catalog__description {
     @include description-style-black;
     margin: 0;
     padding: 0;
+}
+
+.intro-catalog__wrapper {
+    margin: 0 20px 0 20px;
 }
