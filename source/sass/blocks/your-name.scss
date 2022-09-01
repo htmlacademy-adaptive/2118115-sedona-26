@@ -3,14 +3,30 @@
 .your-name {
     background-color: #ffffff;
     color: #000000;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        width: 280px;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 430px;
+        margin-left: 120px;
+    }
 }
 
 .your-name__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 
 .your-name__item {
@@ -18,7 +34,7 @@
 }
 
 .your-name__item:last-child {
-    margin-bottom: 64px;
+    margin-bottom: 0
 }
 
 .your-name__title {
@@ -30,6 +46,14 @@
 
 .your-name__name {
     @include description-style-black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: left;
+}
+
+.your-name__name small {
+    margin-left: 16px;
 }
 
 .your-name__input-your-name {

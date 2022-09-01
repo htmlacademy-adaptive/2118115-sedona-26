@@ -3,19 +3,53 @@
 .impression {
     background-color: #ffffff;
     color: #000000;
-    margin: 0;
-    margin-bottom: 49px;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        width: 648px;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 1280px;
+    }
 }
 
 .impression__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        flex-direction: row;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 960px;
+        justify-content: space-between;
+        margin: auto;
+    }
 }
 
 .impression__item {
     margin-bottom: 16px;
+
+    @import "../variable.scss";
+
+    @media (min-width:$tablet-width) {
+        margin-right: 16px;
+    }
+    
 }
 
 .impression__title {
