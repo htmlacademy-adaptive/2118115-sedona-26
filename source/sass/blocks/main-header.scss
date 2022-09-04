@@ -4,6 +4,7 @@
     width: 320px;
     height: 56px;
     display: flex;
+    flex-direction: column;
 
     @import "../variable.scss";
 
@@ -19,15 +20,5 @@
 .main-header__logo {
     margin: auto;
     padding: 0;
-}
-
-.main-header__toggle {
-    width: 23px;
-    height: 22px;
-
-    @import "../variable.scss";
-
-    @media (min-width: $tablet-width) {
-        display: none;        
-    }
+    text-align: center;
 }

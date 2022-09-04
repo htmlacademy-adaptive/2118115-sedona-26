@@ -1,20 +1,30 @@
 @import "../mixins.scss";
 
 .main-navigation {
+    width: auto;
+    min-height: 55px;
+    position: relative;
     background-color: #ffffff;
-    width: 100%;
+    bottom: 102px;
 }
 
 .main-navigation__list {
-    display: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    @include title-style-black;
+    background-color: #ffffff;
+    color: #000000;
     
     a {
-        text-decoration: none;
+        position: relative;
+        display: block;
+        padding-top: 17px;
+        padding-bottom: 12px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 700;
         color: #ffffff;
+        text-decoration: none;
         background-color: #81B3D2;
     }
 
@@ -26,4 +36,82 @@
     }
 }
 
+.main-navigation__item {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 1, 1, 0.2); 
+}
+
+.main-navigation__item:first-child {
+    border-top: none;
+}
+
+.main-navigation__item:last-child {
+    border-bottom: none;
+}
+
+.main-navigation__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 55px;
+    height: 55px; 
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    @import "../variable.scss";
+
+    @media (min-width: $tablet-width) {
+        display: none;        
+    }
+}
+
+.main-navigation--closed .main-navigation__toggle::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    width: 23px;
+    height: 4px;
+    @import "../variable.scss";
+    background-color: #81B3D2;
+    box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
+}
+
+@import "../variable.scss";
+
+@media (max-width: $mobile-width-only) {
+    .main-navigation--closed .main-navigation__item {
+        display: none;
+    }
+}
+
+.main-navigation--opened .main-navigation__toggle {
+    top: 0;
+    right: 0;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 23px;
+        left: 15px;
+        width: 28px;
+        height: 4px;
+        background-color: #000000;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
 
