@@ -5,7 +5,7 @@
     min-height: 56px;
     position: relative;
     background-color: #ffffff;
-    top: -101px;
+    top: -102px;
 }
 
 .main-navigation__list {
@@ -118,5 +118,16 @@
 
 .main-navigation--opened {
     z-index: 3;
+}
+
+.main-navigation--opened::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 320px;
+    height: 7px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
 }
 
