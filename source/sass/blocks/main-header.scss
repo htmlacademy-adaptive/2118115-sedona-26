@@ -3,8 +3,6 @@
     background-color: #ffffff;
     width: 320px;
     height: 56px;
-    display: flex;
-    flex-direction: column;
 
     @import "../variable.scss";
 
@@ -15,10 +13,4 @@
     @media (min-width:$desktop-width) {
         width: 1200px;
     }
-}
-
-.main-header__logo {
-    margin: auto;
-    padding: 0;
-    text-align: center;
 }

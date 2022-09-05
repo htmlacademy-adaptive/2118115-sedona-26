@@ -2,10 +2,10 @@
 
 .main-navigation {
     width: auto;
-    min-height: 55px;
+    min-height: 56px;
     position: relative;
     background-color: #ffffff;
-    bottom: 102px;
+    top: -101px;
 }
 
 .main-navigation__list {
@@ -55,7 +55,7 @@
     right: 0;
     z-index: 2;
     display: block;
-    width: 55px;
+    width: 56px;
     height: 55px; 
     background-color: #ffffff;
     cursor: pointer;
@@ -93,6 +93,7 @@
 .main-navigation--opened .main-navigation__toggle {
     top: 0;
     right: 0;
+    background-color: #81B3D2;
 
     &::before,
     &::after {
@@ -102,7 +103,7 @@
         left: 15px;
         width: 28px;
         height: 4px;
-        background-color: #000000;
+        background-color: #ffffff;
     }
 
     &::before {
@@ -113,5 +114,9 @@
     &::after {
         transform: rotate(-45deg);
     }
+}
+
+.main-navigation--opened {
+    z-index: 3;
 }
 
