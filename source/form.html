@@ -14,28 +14,28 @@
       <img class="logo__logo-image" src="./img/logo.svg" width="185px" height="96px" alt="Логотип сайта Седона">
     </a>
 
-    <nav class="main-navigation">
-      <button class="main-header__toggle" type="button">
+    <nav class="main-navigation main-navigation--closed">
+      <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню навигации</span>
       </button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
-          <a href="index.html">
+          <a class="main-navigation__link" href="index.html">
             Главная
           </a>
         </li>
         <li class="main-navigation__item">
-          <a href="catalog.html">
+          <a  class="main-navigation__link" href="catalog.html">
             Фото и видео
           </a>
         </li>
         <li class="main-navigation__item">
-          <a>
+          <a class="main-navigation__link main-navigation__link--active">
             Форма отзыва
           </a>
         </li>
         <li class="main-navigation__item">
-          <a href="#">
+          <a class="main-navigation__link" href="#">
             HTMLACADEMY
           </a>
         </li>
@@ -189,6 +189,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

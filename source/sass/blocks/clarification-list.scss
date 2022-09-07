@@ -7,8 +7,8 @@
 }
 
 .clarification-list__list {
-    margin: 23px 18px 52px 18px;
-    padding: 0;
+    padding: 23px 18px 52px 18px;
+    margin: 0;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +19,8 @@
     @import "../variable.scss";
 
     @media (min-width:$tablet-width) {
+        padding: 0;
+        padding-bottom: 59px;
         gap: 0;      
         flex-direction: row;  
         text-align: center;
@@ -28,13 +30,15 @@
 
 .clarification-list__item {
     background-color: #ffffff;
+    position: relative;
+    padding-top: 8px;
     
     @import "../variable.scss";
     
     @media (min-width:$tablet-width) {
         width: 33%;
         flex-grow: 1;
-        margin-bottom: 59px;
+        padding-top: 0;
     }
 
     @media (min-width:$desktop-width) {
@@ -44,36 +48,107 @@
 }
 
 .clarification-list__wrapper {
+    margin-left: 47px;
+    @media (min-width:$tablet-width) {
+        margin-left: 0;
+        padding: 158px 35px 0 36px;
+    }
+
     @media (min-width:$desktop-width) {
         margin-left: 50px;
         margin-right: 50px;
     }
 }
 
+.clarification-list__wrapper-home {
+    @media (min-width:$tablet-width) {
+        padding-left: 36px;
+        padding-right: 35px;
+    }
+}
+
+.clarification-list__wrapper-food {
+    @media (min-width:$tablet-width) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+.clarification-list__wrapper-souvenirs {
+    @media (min-width:$tablet-width) {
+        padding-left: 32px;
+        padding-right: 31px;
+    }
+}
+
 .clarification-list__title {
     @include title-style-black;
     margin: 0;
-    margin-left: 47px;
     margin-bottom: 16px;
     padding: 0;
 
     @import "../variable.scss";
 
     @media (min-width:$tablet-width) {
-        margin-top: 158px;
         margin-left: 0;
+        font-size: 21px;
+        margin-bottom: 30px;
     }
 }
 
 .clarification-list__description {
     @include description-style-black;
     margin: 0;
-    margin-left: 47px;
     padding: 0;
 
     @import "../variable.scss";
 
     @media (min-width:$tablet-width) {
         margin-left: 0;
+    }
+}
+
+.clarification-list__svg-home {
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    top: 0;
+    left: 0;
+
+    @media (min-width:$tablet-width) {
+        width: 75px;
+        height: 72px;
+        top: 60px;
+        left: 90px;
+    }
+}
+
+.clarification-list__svg-food {
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    top: 0;
+    left: 0;
+
+    @media (min-width:$tablet-width) {
+        width: 76px;
+        height: 78px;
+        top: 63px;
+        left: 89px;
+    }
+} 
+
+.clarification-list__svg-souvenirs {
+    position: absolute;
+    width: 32px;
+    height: 38px;
+    top: 0;
+    left: 0;
+
+    @media (min-width:$tablet-width) {
+        width: 64px;
+        height: 75px;   
+        top: 57px;
+        left: 95px;     
     }
 }

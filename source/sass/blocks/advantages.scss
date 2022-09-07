@@ -92,6 +92,10 @@
     margin: 0;
     margin-bottom: 11px;
     padding: 0;
+
+    @media (min-width:$tablet-width) {
+        font-size: 21px;
+    }
 }
 
 .advantages__number {
@@ -113,6 +117,7 @@
     @import "../variable.scss";
 
     @media (min-width:$tablet-width){
+        padding: 40px 32px 43px 32px;
         width: 256px;
         box-sizing: border-box;
     }
@@ -121,4 +126,19 @@
         width: 400px;
         padding: 47px 52px 56px 52px;
     } 
-}    
+}   
+
+.advantages__text-wrapper-bridge {
+    padding: 39px 16px 35px 15px;
+
+    @media (min-width:$tablet-width){
+        padding: 43px 36px 42px 36px;
+        width: 256px;
+        box-sizing: border-box;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 400px;
+        padding: 47px 52px 56px 52px;
+    } 
+}
