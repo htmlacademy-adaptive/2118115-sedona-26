@@ -51,7 +51,6 @@
 }
 
 .hotel-search__button {
-    padding: 0;
     margin-bottom: 47px;
     border: none;
     padding: 16px 49px;
@@ -73,9 +72,11 @@
 
     @media (min-width:$tablet-width) {
         margin-bottom: 58px;
+        padding: 15px 136px 18px 136px;
+        font-size: 21px;
     }
 
-    @media (min-width:$tablet-width) {
+    @media (min-width:$desktop-width) {
         margin-bottom: 66px;
     }
 }

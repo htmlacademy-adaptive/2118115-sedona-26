@@ -29,6 +29,11 @@
     @media (min-width: $tablet-width) {
         padding: 48px 124px 56px 124px;        
     }
+
+    @media (min-width: $desktop-width) {
+        padding: 59px 349px 44px 357px;
+
+    }
 }
 
 .intro__title {
@@ -36,6 +41,10 @@
     margin: 0;
     margin-bottom: 35px;
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+        font-size: 21px;
+    }
 }
 
 .intro__description {

@@ -34,13 +34,3 @@
         margin: 77px 370px 90px 370px;
     }    
 }
-
-.greeting__svg {
-    position: absolute;
-    bottom: 0;
-    left: -440px; 
-    
-    @media (min-width: $tablet-width) {
-        left: -212px;
-    }
-}
