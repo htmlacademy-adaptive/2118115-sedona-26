@@ -34,7 +34,7 @@
     color: #ffffff;      
 }
 
-@mixin figcaption-title {
+@mixin gallery-title {
     font-family: inherit;
     font-weight: 700;
     font-size: 14px;
@@ -42,7 +42,7 @@
     
 }
 
-@mixin figcaption-description {
+@mixin gallery-description {
     font-family: inherit;
     font-weight: 400;
     font-size: 14px;
