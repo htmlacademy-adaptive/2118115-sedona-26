@@ -5,28 +5,20 @@
     
 }
 
-.map__wrapper {
-    padding: 0;
-    margin: 0;
-    background-image: url("../../img/mapmobile.jpg");
-    width: 320px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.map iframe {
+    display: block;
+    border: none;
+}
 
+.map__map {
     @import "../variable.scss";
 
     @media (min-width:$tablet-width) {
-        background-image: url("../../img/maptablet.jpg");
-        background-repeat: no-repeat;
         width: 768px;
         height: 350px;
     }
 
     @media (min-width:$desktop-width) {
-        background-image: url("../../img/mapdesktop.jpg");
-        background-repeat: no-repeat;
         width: 1200px;
         height: 350px;
     }
