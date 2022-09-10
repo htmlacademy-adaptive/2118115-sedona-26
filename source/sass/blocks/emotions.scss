@@ -12,16 +12,70 @@
     @media (min-width:$tablet-width) {
         width: 768px;
         align-content: center;
+        padding-top: 42px;
+        padding-bottom: 64px;
     }
 
     @media (min-width:$desktop-width) {
-        width: 1280px;
+        width: 1200px;
+        padding-top: 56px;
     }
 }
 
 .emotions__title {
     @include title-style-black;
+    margin: 0;
     margin-bottom: 20px;
+    width: 100%;
+
+    @media (min-width:$tablet-width) {
+        font-size: 21px;
+        position: relative;
+    }
+}
+
+.emotions__title::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #DBDBDB;
+    top: 13px;
+    left: 0;
+    display: none;
+
+    @media (min-width:$tablet-width) {
+        display: block;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 280px;
+        display: block;
+    }
+}
+
+.emotions__title::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #DBDBDB;
+    top: 13px;
+    right: 0;
+    display: none;
+
+    @media (min-width:$tablet-width) {
+        display: block;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 280px;
+        display: block;
+    }
+}
+
+.emotions__emotions-form {
+    width: 100%;
 }
 
 .emotions__emotions-input {

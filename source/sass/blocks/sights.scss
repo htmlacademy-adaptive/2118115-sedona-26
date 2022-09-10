@@ -12,6 +12,7 @@
     @media (min-width:$tablet-width) {
         width: 768px;
         align-content: center;
+        padding-top: 48px;
     }
 
     @media (min-width:$desktop-width) {
@@ -34,7 +35,7 @@
     @media (min-width:$tablet-width) {
         flex-direction: row;
         width: 480px;
-        align-content: center;
+        margin: auto;
     }
 
     @media (min-width:$desktop-width) {
@@ -44,6 +45,10 @@
 
 .sights__item:not(:last-child) {
     margin-bottom: 16px;
+
+    @media (min-width:$desktop-width) {
+        margin-bottom: 0;
+    }
 }
 
 .sights__item {
@@ -54,11 +59,69 @@
     width: 192px;
     flex-grow: 1;
     }
+
+    @media (min-width:$desktop-width) {
+        text-align: center;
+        margin: 0;
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
 }
 
 .sights__title {
     @include title-style-black;
-    margin-bottom: 20px;
+    margin: 0;
+    margin-bottom: 20px;    
+
+    @media (min-width:$tablet-width) {
+        font-size: 21px;
+        position: relative;
+        width: 100%;
+    }
+    
+    @media (min-width:$desktop-width) {
+        margin-bottom: 28px;
+    }
+}
+
+.sights__title::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #DBDBDB;
+    top: 26px;
+    left: 0;
+    display: none;
+
+    @media (min-width:$tablet-width) {
+        display: block;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 280px;
+        display: block;
+    }
+}
+
+.sights__title::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #DBDBDB;
+    top: 26px;
+    right: 0;
+    display: none;
+    
+    @media (min-width:$tablet-width) {
+        display: block;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 280px;
+        display: block;
+    }
 }
 
 .sights__variant {

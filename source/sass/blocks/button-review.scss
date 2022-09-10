@@ -1,38 +1,45 @@
-@import "../mixins.scss";
-
 .button-review {
-    background-color: #ffffff;
-    color: #000000;
-    margin: 0;
-    padding: 0;
-
-    @import "../variable.scss";
+    width: 280px;
 
     @media (min-width:$tablet-width) {
+        width: 648px;
         display: flex;
         justify-content: space-between;
-        width: 648px;
+        align-items: center;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 768px;
+        margin: auto;
     }
 }
 
 .button-review__button {
-    background-color: $main-color;
-    border: none;
-    padding: 18px 46px 13px 46px;
-}
-
-.button-reviev__text {
-    @include title-style-white;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
     text-transform: uppercase;
+    color: #ffffff;
+    background-color: #81B3D2;
+    padding: 18px 49px 14px 49px;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #669EC0;
+    }
+
+    &:active {
+        background-color: #5496BD;
+        color: rgba(255, 255, 255, 0.30);
+    }
 }
 
 .button-review__legend {
-    font-family: inherit;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 21px;
     margin: 0;
-    padding: 0;
+    text-align: end;
     color: #333333;
     opacity: 60%;
 }

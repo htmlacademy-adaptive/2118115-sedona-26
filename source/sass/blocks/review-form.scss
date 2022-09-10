@@ -10,7 +10,7 @@
     }
 
     @media (min-width:$desktop-width) {
-        width: 1280px;
+        width: 1200px;
     }
 }
 
@@ -22,12 +22,25 @@
     @import "../variable.scss";
 
     @media (min-width:$tablet-width) {
+        width: 648px;
+        margin: auto;
         flex-direction: row;
-        align-items: baseline;
         justify-content: space-between;
     }
+
+    @media (min-width:$desktop-width) {
+        width: 960px;
+    }
+
 }
 
 .review-form__item {
-    margin: 24px 20px 39px 20px;
+    padding: 24px 20px 39px 20px;
+    width: 280px;
+    border-top: 1px #E5E5E5 solid;
+
+    @media (min-width:$tablet-width) {
+        border: none;
+        padding: 0;
+    }
 }

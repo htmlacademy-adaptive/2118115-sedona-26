@@ -12,11 +12,11 @@
 
     @media (min-width:$tablet-width) {
         width: 298px;
+        align-content: flex-end;
     }
     @media (min-width:$desktop-width) {
         width: 403px;
-        margin-left: 128px;
-        margin-right: 120px;
+        padding-left: 62px;
     }
 }
 
@@ -39,7 +39,17 @@
 
 .contacts__title {
     @include title-style-black;
+    margin: 0;
     margin-bottom: 20px;
+
+    @media (min-width:$tablet-width) {
+        font-size: 21px;
+        margin-left: -17px;
+    }
+
+    @media (min-width:$desktop-width) {
+        margin-left: -62px;
+    }
 }
 
 .contacts__name {
@@ -54,13 +64,40 @@
     margin-left: 16px;
 }
 
-.contacts__input-contacts {
+.contacts__input-contacts-phone {
     width: 280px;
     height: 58px;
     border: none;
     padding: 16px;
+    padding-right: 58px;
     margin: 0;
     box-sizing: border-box;
     @include title-style-black;
     background-color: #F2F2F2;
+    background-image: url("../../img/phone.svg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+
+    @media (min-width:$desktop-width) {
+        width: 403px;
+    }
+}
+
+.contacts__input-contacts-email {
+    width: 280px;
+    height: 58px;
+    border: none;
+    padding: 16px;
+    padding-right: 58px;
+    margin: 0;
+    box-sizing: border-box;
+    @include title-style-black;
+    background-color: #F2F2F2;
+    background-image: url("../../img/email.svg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+
+    @media (min-width:$desktop-width) {
+        width: 403px;
+    }
 }
