@@ -11,10 +11,12 @@
 
     @media (min-width:$tablet-width) {
         width: 648px;
+        padding-top: 48px;
     }
 
     @media (min-width:$desktop-width) {
-        width: 1280px;
+        width: 1200px;
+        padding-top: 56px;
     }
 }
 
@@ -32,6 +34,8 @@
 
     @media (min-width:$tablet-width) {
         flex-direction: row;
+        width: 575px;
+        margin: auto;
     }
 
     @media (min-width:$desktop-width) {
@@ -47,14 +51,73 @@
     @import "../variable.scss";
 
     @media (min-width:$tablet-width) {
-        margin-right: 16px;
+        width: 50%;
+    }    
+
+    @media (min-width:$desktop-width) {
+        width: 33%;
+        flex-grow: 1;
+        text-align: center;
     }
-    
+}
+
+.impression__item:last-child {
+    margin-bottom: 0;    
 }
 
 .impression__title {
     @include title-style-black;
+    margin: 0;
     margin-bottom: 20px;
+    
+    @media (min-width:$tablet-width) {
+        font-size: 21px;
+        position: relative;
+    }
+
+    @media (min-width:$desktop-width) {
+        margin-bottom: 28px;
+    }
+}
+
+.impression__title::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #DBDBDB;
+    top: 13px;
+    left: 0;
+    display: none;
+
+    @media (min-width:$tablet-width) {
+        display: block;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 280px;
+        display: block;
+    }
+}
+
+.impression__title::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    background-color: #DBDBDB;
+    top: 13px;
+    right: 0;
+    display: none;
+
+    @media (min-width:$tablet-width) {
+        display: block;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 280px;
+        display: block;
+    }
 }
 
 .impression__variant {

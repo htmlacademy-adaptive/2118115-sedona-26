@@ -11,11 +11,14 @@
 
     @media (min-width:$tablet-width) {
         width: 280px;
+        padding-right: 43px;
+        border-right: 1px #DBDBDB solid;
     }
 
-    @media (min-width:$desktop-width) {
+    @media (min-width:$desktop-width) {        
         width: 430px;
-        margin-left: 120px;
+        padding-right: 63px;
+        border-right: 1px #DBDBDB solid;
     }
 }
 
@@ -31,10 +34,16 @@
 
 .your-name__item {
     margin-bottom: 16px;
+
+    
 }
 
 .your-name__item:last-child {
-    margin-bottom: 0
+    margin-bottom: 0;
+
+    @media (min-width:$tablet-width) {
+        margin-bottom: 16px;
+    }
 }
 
 .your-name__title {
@@ -42,6 +51,10 @@
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
+
+    @media (min-width:$tablet-width) {
+        font-size: 21px;
+    }
 }
 
 .your-name__name {
@@ -65,4 +78,8 @@
     box-sizing: border-box;
     @include title-style-black;
     background-color: #F2F2F2;
+
+    @media (min-width:$desktop-width) {
+        width: 430px;
+    }
 }

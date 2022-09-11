@@ -5,8 +5,8 @@
 }
 
 .alter__list {
-    margin: 26px 18px;
-    padding: 0;
+    padding: 26px 18px;
+    margin: 0;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +19,7 @@
         flex-direction: row;
         gap: 0;
         margin: 0;
+        padding: 0;
     }
 
     @media (min-width:$desktop-width) {
@@ -31,7 +32,12 @@
 
     @media (min-width:$tablet-width) {
         width: 33%;
+        flex-grow: 1;
         margin-bottom: 62px;
+    }
+
+    @media (min-width:$desktop-width) {
+        margin-bottom: 0;
     }
 }
 
@@ -47,6 +53,11 @@
     @media (min-width:$tablet-width) {
         margin-left: 30px;
         margin-right: 30px;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 137px;
+        margin: auto;
     }
 }
 
@@ -66,9 +77,46 @@
 }
 
 .alter__wrapper {
+    margin-left: 8px;
+    margin-right: 8px;
+
     @import "../variable.scss";
 
     @media (min-width:$tablet-width) {
-        margin: 41px 50px 0 50px;
+        padding: 41px 50px 0 50px;
+        margin: 0;
     }    
+}
+
+.alter__wrapper-area {
+    @media (min-width:$tablet-width) {
+        padding-right: 34px;
+        padding-left: 33px;
+    }    
+
+    @media (min-width:$desktop-width) {
+        padding: 43px 43px 62px 42px;
+    }
+}
+
+.alter__wrapper-road {
+    @media (min-width:$tablet-width) {
+        padding-right: 54px;
+        padding-left: 54px;
+    }    
+
+    @media (min-width:$desktop-width) {
+        padding: 42px 65px 62px 65px;
+    }
+}
+
+.alter__wrapper-tourists {
+    @media (min-width:$tablet-width) {
+        padding-right: 40px;
+        padding-left: 41px;
+    }    
+
+    @media (min-width:$desktop-width) {
+        padding: 42px 55px 62px 55px;
+    }
 }

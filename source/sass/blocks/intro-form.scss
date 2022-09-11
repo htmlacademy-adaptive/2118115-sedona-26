@@ -20,7 +20,15 @@
 }
 
 .intro-form__wrapper {
-    margin: 36px 20px 28px 20px;
+    padding: 36px 20px 28px 20px;
+
+    @media (min-width:$tablet-width) {
+        padding: 64px 166px 102px 167px;
+    }
+
+    @media (min-width:$desktop-width) {
+        padding: 115px 383px 66px 382px;
+    }
 }
 
 .intro-form__title {
@@ -28,6 +36,10 @@
     margin: 0;
     margin-bottom: 24px;
     padding: 0;
+
+    @media (min-width:$tablet-width) {
+        font-size: 30px;
+    }
 }
 
 .intro-form__description {
@@ -35,4 +47,8 @@
     margin: 0;
     margin-bottom: 28px;
     padding: 0;
+
+    @media (min-width:$tablet-width) {
+        margin-bottom: 0;
+    }
 }

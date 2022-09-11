@@ -4,6 +4,7 @@
     background-image: url("../../img/backgroundwelcome.png");
     width: 320px;
     height: 389px;
+    position: relative;
 
     @media (min-width: $tablet-width) {
         background-image: url("../../img/backdesktop.jpg");      

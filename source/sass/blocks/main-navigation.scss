@@ -1,29 +1,218 @@
 @import "../mixins.scss";
 
 .main-navigation {
+    width: auto;
+    min-height: 56px;
+    position: relative;
     background-color: #ffffff;
-    width: 100%;
-}
-
-.main-navigation__list {
-    display: none;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    @include title-style-black;
-    
-    a {
-        text-decoration: none;
-        color: #ffffff;
-        background-color: #81B3D2;
-    }
+    top: -102px;
 
     @import "../variable.scss";
 
     @media (min-width: $tablet-width) {
-        display: flex;       
-        justify-content: space-between; 
+        width: 768px;        
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 1200px;
     }
 }
 
+.main-navigation__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
 
+    @import "../variable.scss";
+
+    @media (min-width: $tablet-width) {
+        width: 768px;
+        height: 56px;
+        display: flex;       
+        justify-content: center; 
+        align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 1200px;
+    }
+}
+
+.main-navigation__item {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 1, 1, 0.2); 
+
+    @import "../variable.scss";
+
+    @media (min-width: $tablet-width) {
+        width: 153px;
+        flex-grow: 1;
+        border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 240px;
+        flex-grow: 1;
+        border: none;
+    }
+}
+
+.main-navigation__item:nth-child(2) {
+    @import "../variable.scss";
+
+    @media (min-width: $tablet-width) {
+        margin-right: 153px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-right: 240px;
+    }
+
+}
+
+
+.main-navigation__item:first-child {
+    border-top: none;
+}
+
+.main-navigation__item:last-child {
+    border-bottom: none;
+}
+
+.main-navigation__link {
+    position: relative;
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #81B3D2;
+
+    @import "../variable.scss";
+
+    @media (min-width: $tablet-width) {
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+        background-color: #ffffff;
+
+        &:hover {
+            color: #81B3D2;
+        }
+        &:active {
+            color: #000000;
+            opacity: 60%;
+        }
+    }
+}
+
+.main-navigation__link--active {
+    @import "../variable.scss";
+    @media (min-width: $tablet-width) {
+        color: #766357;
+        z-index: 0;
+    }    
+}
+
+.main-navigation__toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 56px;
+    height: 55px; 
+    background-color: #ffffff;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    @import "../variable.scss";
+
+    @media (min-width: $tablet-width) {
+        display: none;        
+    }
+}
+
+.main-navigation--closed .main-navigation__toggle::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    width: 23px;
+    height: 4px;
+    @import "../variable.scss";
+    background-color: #81B3D2;
+    box-shadow: 0 9px 0 0 #81B3D2, 0 18px 0 0 #81B3D2;
+}
+
+@import "../variable.scss";
+
+@media (max-width: $mobile-width-only) {
+    .main-navigation--closed .main-navigation__item {
+        display: none;
+    }
+}
+
+.main-navigation--opened .main-navigation__toggle {
+    top: 0;
+    right: 0;
+    background-color: #81B3D2;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 23px;
+        left: 15px;
+        width: 28px;
+        height: 4px;
+        background-color: #ffffff;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}
+
+.main-navigation--opened {
+    z-index: 3;
+}
+
+.main-navigation--opened::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 320px;
+    height: 7px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.main-navigation--nojs .main-navigation__toggle {
+    display: none;
+}
+
+.main-navigation--nojs .main-navigation__list {
+    position: static;
+    min-height: 0;
+}
+
+.main-navigation--nojs .main-navigation__item {
+    display: block;
+}
+ .main-navigation--nojs {
+    z-index: 3;
+ }
