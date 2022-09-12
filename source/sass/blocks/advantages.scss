@@ -36,44 +36,74 @@
 }    
 
 .advantages__sedona-img {
-    background-image: url("../../img/sedonastreet.jpg");
+    background-image: url("../../img/sedona-street/streetmobile.jpg");
     background-repeat: no-repeat;
     width: 320px;
     height: 260px;
     flex-grow: 1;
 
+    @media (min-resolution: 2dppx) {
+        background-image: url("../../img/sedona-street/streetmobile@2x.jpg");
+        background-size: 320px auto;
+    }
+
     @import "../variable.scss";
 
     @media (min-width:$tablet-width) {
-        background-image: url("../../img/sedonastreettablet.jpg");
+        background-image: url("../../img/sedona-street/streettablet.jpg");
         width: 512px;
         height: 256px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../../img/sedona-street/streettablet@2x.jpg");
+            background-size: 512px auto;
+        }
     }
 
     @media (min-width:$desktop-width) {
-        background-image: url("../../img/desktopstreet.jpg");
+        background-image: url("../../img/sedona-street/streetdesktop.jpg");
         width: 800px;
         height: 256px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../../img/sedona-street/streetdesktop@2x.jpg");
+            background-size: 800px auto;
+        }
     }
 }        
 
 .advantages__bridge-img {
-    background-image: url("../../img/devilbridge.jpg");
+    background-image: url("../../img/davil-bridge/bridgemobile.jpg");
     width: 320px;
     height: 260px;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../../img/davil-bridge/bridgemobile@2x.jpg");
+        background-size: 320px auto;
+    }
 
     @import "../variable.scss";
 
     @media (min-width:$tablet-width) {
-        background-image: url("../../img/bridgetablet.jpg");
+        background-image: url("../../img/davil-bridge/bridgetablet.jpg");
         width: 512px;
-        height: 256px;
+        height: 256px; 
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../../img/davil-bridge/bridgetablet2x.jpg");
+            background-size: 512px auto;
+        }
     }
 
     @media (min-width:$desktop-width) {
-        background-image: url("../../img/bridgedesktop.jpg");
+        background-image: url("../../img/davil-bridge/bridgedesktop.jpg");
         width: 800px;
         height: 256px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../../img/davil-bridge/bridgedesktop@2x.jpg");
+            background-size: 800px auto;        
+        }
     }
 }
 
