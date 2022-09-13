@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicon-32x32.png" type="image/png"> 
+  <link rel="manifest" href="/manifest.webmanifest">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -65,9 +68,12 @@
       <ul class="gallery__list">
         <li class="gallery__item">
           <picture>
+            <source media="(min-width: 1200px)"
+              srcset="./img/catalog/vast-desktop.jpg 1x, ./img/catalog/vast-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/catalog/vasttablet.jpg 1x, ./img/catalog/vasttablet@2x.jpg 2x">
-            <img class="gallery__image" src="./img/catalog/vast.jpg" srcset="./img/catalog/vast@2x.jpg 2x" alt="Неродные просторы">
+            <img class="gallery__image" src="./img/catalog/vast.jpg" srcset="./img/catalog/vast@2x.jpg 2x"
+              alt="Неродные просторы">
           </picture>
           <div class="gallery__text">
             <div class="gallery__description">
@@ -75,7 +81,7 @@
               <p class="gallery__author">Автор фото: Борис</p>
             </div>
             <div class="gallery__like">
-              <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+              <svg class="gallery__icon gallery__icon--vast" width="23" height="21" viewBox="0 0 23 21" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".3"
                   d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
@@ -87,9 +93,12 @@
         </li>
         <li class="gallery__item">
           <picture>
+            <source media="(min-width: 1200px)"
+              srcset="./img/catalog/vegetation-desktop.jpg 1x, ./img/catalog/vegetation-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/catalog/vegetationtablet.jpg 1x, ./img/catalog/vegetationtablet@2x.jpg 2x">
-            <img class="gallery__image" src="./img/catalog/vegetation.jpg" srcset="./img/catalog/vegetation@2x.jpg 2x" alt="Местная растительность">
+            <img class="gallery__image" src="./img/catalog/vegetation.jpg" srcset="./img/catalog/vegetation@2x.jpg 2x"
+              alt="Местная растительность">
           </picture>
           <div class="gallery__text">
             <div class="gallery__description">
@@ -97,7 +106,7 @@
               <p class="gallery__author">Автор фото: Сергей</p>
             </div>
             <div class="gallery__like">
-              <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+              <svg class="gallery__icon gallery__icon--veg" width="23" height="21" viewBox="0 0 23 21" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".3"
                   d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
@@ -109,9 +118,12 @@
         </li>
         <li class="gallery__item">
           <picture>
+            <source media="(min-width: 1200px)"
+              srcset="./img/catalog/northroad-desktop.jpg 1x, ./img/catalog/northroad-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/catalog/northroadtablet.jpg 1x, ./img/catalog/northroadtablet@2x.jpg 2x,">
-            <img class="gallery__image" src="./img/catalog/northroad.jpg" srcset="./img/catalog/northroad@2x.jpg 2x" alt="Дорога на север">
+            <img class="gallery__image" src="./img/catalog/northroad.jpg" srcset="./img/catalog/northroad@2x.jpg 2x"
+              alt="Дорога на север">
           </picture>
           <div class="gallery__text">
             <div class="gallery__description">
@@ -119,7 +131,7 @@
               <p class="gallery__author">Автор фото: Пётр</p>
             </div>
             <div class="gallery__like">
-              <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+              <svg class="gallery__icon gallery__icon--road" width="23" height="21" viewBox="0 0 23 21" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".3"
                   d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
@@ -131,9 +143,12 @@
         </li>
         <li class="gallery__item">
           <picture>
+            <source media="(min-width: 1200px)"
+              srcset="./img/catalog/bridgeofdavil-desktop.jpg 1x, ./img/catalog/bridgeofdavil-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/catalog/bridgeofdavil-tablet.jpg 1x, ./img/catalog/bridgeofdavil-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="./img/catalog/bridgeofdavil.jpg" srcset="./img/catalog/bridgeofdavil@2x.jpg 2x" alt="Мост Дьявола">
+            <img class="gallery__image" src="./img/catalog/bridgeofdavil.jpg"
+              srcset="./img/catalog/bridgeofdavil@2x.jpg 2x" alt="Мост Дьявола">
           </picture>
           <div class="gallery__text">
             <div class="gallery__description">
@@ -141,7 +156,7 @@
               <p class="gallery__author">Автор фото: Антон</p>
             </div>
             <div class="gallery__like">
-              <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+              <svg class="gallery__icon gallery__icon--bridge" width="23" height="21" viewBox="0 0 23 21" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path opacity=".3"
                   d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"

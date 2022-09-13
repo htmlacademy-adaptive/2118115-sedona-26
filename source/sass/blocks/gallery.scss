@@ -66,6 +66,10 @@
     @media (min-width:$tablet-width) {
         width: 648px;
     }
+    @media (min-width:$desktop-width) {
+        width: 1200px;
+    }
+
 }
 
 .gallery__item:last-child {
@@ -90,6 +94,7 @@
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
+    display: block;
 
     @media (min-width:$tablet-width) {
         margin-bottom: 22px;
@@ -122,7 +127,7 @@
         box-sizing: border-box;
         background-color: rgba(0, 0, 0, 0.30);
         position: absolute;
-        bottom: 6px;
+        bottom: 0;
         left: 0;
         width: 100%;
     }
@@ -140,7 +145,11 @@
 
 .gallery__like {
     margin: 0;
-
+    
+    @media (min-width:$tablet-width) {
+        position: relative;
+    }    
+    
     @media (min-width:$desktop-width) { 
         position: relative;
     }
@@ -167,6 +176,13 @@
 .gallery__icon {
     margin-right: 10px;
 
+    @media (min-width:$tablet-width) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-right: 0;
+    }
+
     @media (min-width:$desktop-width) { 
         fill: #ffffff;
         position: absolute;
@@ -176,12 +192,41 @@
     }
 }
 
+.gallery__icon--vast {
+    @media (min-width:$tablet-width) {
+        bottom: 3px;
+        right: 41px;
+    }
+}
+
+.gallery__icon--veg {
+    @media (min-width:$tablet-width) {
+        bottom: 3px;
+        right: 33px;
+    }
+}
+
+.gallery__icon--road {
+    @media (min-width:$tablet-width) {
+        bottom: 3px;
+        right: 26px;
+    }
+}
+
+.gallery__icon--bridge {
+    @media (min-width:$tablet-width) {
+        bottom: 3px;
+        right: 33px;
+    }
+}
+
 .gallery__icon path {
     @media (min-width:$desktop-width) { 
         opacity: 100%;
         fill: #ffffff;
     }
 }
+
 
 .gallery__amount {
     @include gallery-title;
