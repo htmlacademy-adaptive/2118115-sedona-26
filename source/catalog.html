@@ -11,7 +11,7 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="./index.html">
-      <img class="logo__logo-image" src="./img/logo.svg" width="185px" height="96px" alt="Логотип сайта Седона">
+      <img class="logo__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
     </a>
 
     <nav class="main-navigation main-navigation--closed">
@@ -64,7 +64,12 @@
       <h2 class="visually-hidden">Фото-и видео-галерея</h2>
       <ul class="gallery__list">
         <li class="gallery__item">
-          <img class="gallery__image" src="./img/catalog/vast.jpg" width="280" height="280" srcset="./img/catalog/vast@2x.jpg 2x" alt="Неродные просторы" >
+          <picture>
+            <source @media="(min-width: 768px)"
+              srcset="./img/tablet/vasttablet.jpg 1x, ./img/tablet/vasttablet@2x.jpg 2x">
+            <img class="gallery__image" src="./img/catalog/vast.jpg" width="280" height="280"
+              srcset="./img/catalog/vast@2x.jpg 2x" alt="Неродные просторы">
+          </picture>
           <div class="gallery__text">
             <div class="gallery__description">
               <h2 class="gallery__image-title">Неродные просторы</h2>
@@ -82,8 +87,12 @@
           </div>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="./img/catalog/vegetation.jpg" alt="Местная растительность" width="280px"
-            height="280px">
+          <picture>
+            <source @media="(min-width: 768px)"
+              srcset="./img/tablet/vegetationtablet.jpg 1x, ./img/tablet/vegetationtablet@2x.jpg 2x">
+            <img class="gallery__image" src="./img/catalog/vegetation.jpg" width="280" height="280"
+              srcset="./img/catalog/vegetation@2x.jpg 2x" alt="Местная растительность">
+          </picture>
           <div class="gallery__text">
             <div class="gallery__description">
               <h2 class="gallery__image-title">Местная растительность</h2>
@@ -101,7 +110,12 @@
           </div>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="./img/catalog/northroad.jpg" alt="Дорога на север" width="280px" height="280px">
+          <picture>
+            <source @media="(min-width: 768px)"
+              srcset="./img/tablet/northroadtablet.jpg 1x, ./img/tablet/northroadtablet@2x.jpg 2x,">
+            <img class="gallery__image" src="./img/catalog/northroad.jpg" width="280" height="280"
+              srcset="./img/catalog/northroad@2x.jpg 2x" alt="Дорога на север">
+          </picture>
           <div class="gallery__text">
             <div class="gallery__description">
               <h2 class="gallery__image-title">Дорога на север</h2>
@@ -119,7 +133,12 @@
           </div>
         </li>
         <li class="gallery__item">
-          <img class="gallery__image" src="./img/catalog/bridgeofdavil.jpg" alt="Мост Дьявола" width="280px" height="280px">
+          <picture>
+            <source @media="(min-width: 768px)"
+              srcset="./img/tablet/bridgeofdavil-tablet.jpg 1x, ./img/tablet/bridgeofdavil-tablet@2x.jpg 2x">
+            <img class="gallery__image" src="./img/catalog/bridgeofdavil.jpg" width="280" height="280"
+              srcset="./img/catalog/bridgeofdavil@2x.jpg 2x" alt="Мост Дьявола">
+          </picture>
           <div class="gallery__text">
             <div class="gallery__description">
               <h2 class="gallery__image-title">Мост Дьявола</h2>
@@ -145,8 +164,8 @@
         <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не
           подорожали в очередной раз!</p>
       </div>
-      <img class="video-presentation__video-image" src="./img/videoimg.jpg" alt="Видеопрезентация Седоны" width="280px"
-        height="177px">
+      <img class="video-presentation__video-image" src="./img/videoimg.jpg" alt="Видеопрезентация Седоны" width="280"
+        height="177">
     </section>
   </main>
   <footer class="main-footer">

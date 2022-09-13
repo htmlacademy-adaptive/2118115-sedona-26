@@ -62,6 +62,12 @@
     }
 }
 
+.gallery__item:first-child {
+    @media (min-width:$tablet-width) {
+        width: 648px;
+    }
+}
+
 .gallery__item:last-child {
     border-bottom: 1px #E5E5E5 solid;
 
@@ -88,6 +94,7 @@
     @media (min-width:$tablet-width) {
         margin-bottom: 22px;
     }
+    
     @media (min-width:$desktop-width) {
         margin-bottom: 0;
     }
