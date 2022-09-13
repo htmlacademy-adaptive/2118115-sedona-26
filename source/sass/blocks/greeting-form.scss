@@ -1,20 +1,35 @@
 .greeting-form {
-    background-image: url("../../img/backgroundform.png");
+    background-image: url("../../img/form/formmobile.png");
     width: 320px;
     height: 214px;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url("../../img/form/formmobile@2x.jpg");
+        background-size: 320px auto;
+    }
 
     @import "../variable.scss";
 
     @media (min-width:$tablet-width) {
-        background-image: url("../../img/welcometablet.jpg");        
+        background-image: url("../../img/form/formtablet.jpg");        
         width: 768px;
         height: 290px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../../img/form/formtablet@2x.jpg");
+            background-size: 768px auto;
+        }
     }
 
     @media (min-width:$desktop-width) {
-        background-image: url("../../img/welcomedesktop.jpg");
+        background-image: url("../../img/form/formdesktop.jpg");
         width: 1200px;
         height: 290px;
+
+        @media (min-resolution: 2dppx) {
+            background-image: url("../../img/form/formdesktop@2x.jpg");
+            background-size: 1200px auto;
+        }
     }
 }
 
