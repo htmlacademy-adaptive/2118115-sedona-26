@@ -82,4 +82,18 @@
     @media (min-width:$desktop-width) {
         width: 430px;
     }
+
+    &:hover {
+        background-color: #E5E5E5;
+    }
+
+    &:active {
+        background-color: #ffffff;
+        border: 4px #E5E5E5 solid;
+
+    }
+
+    &:focus-visible{ 
+        outline: none;
+    }
 }

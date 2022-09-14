@@ -81,6 +81,19 @@
     @media (min-width:$desktop-width) {
         width: 403px;
     }
+
+    &:hover {
+        background-color: #E5E5E5;
+    }
+
+    &:active {
+        background-color: #ffffff;
+        border: 4px #E5E5E5 solid;
+    }
+
+    &:focus-visible{ 
+        outline: none;
+    }
 }
 
 .contacts__input-contacts-email {
@@ -99,5 +112,18 @@
 
     @media (min-width:$desktop-width) {
         width: 403px;
+    }
+
+    &:hover {
+        background-color: #E5E5E5;
+    }
+
+    &:active {
+        background-color: #ffffff;
+        border: 4px #E5E5E5 solid;
+    }
+
+    &:focus-visible{ 
+        outline: none;
     }
 }
