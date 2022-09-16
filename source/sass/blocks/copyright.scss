@@ -3,36 +3,8 @@
 .copyright {
     background-color: #ffffff;
     color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center
 }
 
-.copyright__text {
-    @include description-style-black;
-    margin: 0;
-    margin-right: 10px;
-    padding: 0;
-    color: #000000;
-    cursor: pointer;
-
-    &:hover {
-        color: #81B3D2;
-    }
-
-    &:active {
-        color: #B3B3B3;
-    }
-}
-
-.copyright__svg {
-    fill: #000000;
-
-    &:hover {
-        fill: #81B3D2;
-    }
-
-    &:active {
-        fill: #B3B3B3;
-    }
+.copyright__link {
+    text-decoration: none;
 }
