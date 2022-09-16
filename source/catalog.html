@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="./favicon.ico">
-  <link rel="icon" href="./img/favicon-32x32.png" type="image/png"> 
+  <link rel="icon" href="./img/favicon-32x32.png" type="image/png">
   <link rel="manifest" href="/manifest.webmanifest">
   <title>HTML Academy: Седона</title>
   <style>
@@ -91,6 +91,9 @@
       <ul class="gallery__list">
         <li class="gallery__item">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/vast-desktop-webp.webp 1x, ./img/catalog/vast-desktop-webp@2x.webp 2x,">
+            <source type="image/webp" media="(min-width: 768px)" srcset="./img/catalog/vasttablet-webp.webp 1x, ./img/catalog/vasttablet-webp@2x.webp 2x">
+            <source type="image/webp" srcset="./img/catalog/vast-webp.webp 1x, ./img/catalog/vast-webp@2x.webp 2x">
             <source media="(min-width: 1200px)"
               srcset="./img/catalog/vast-desktop.jpg 1x, ./img/catalog/vast-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
@@ -104,10 +107,12 @@
               <p class="gallery__author">Автор фото: Борис</p>
             </div>
             <div class="gallery__like">
-              <svg class="gallery__icon gallery__icon--vast" width="23" height="21" viewBox="0 0 23 21">
-                <use href="./img/sprite.svg#like"></use>
-              </svg>
-              <span class="gallery__amount">1350</span>
+              <span class="gallery__amount">
+                <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21">
+                  <use href="./img/sprite.svg#like"></use>
+                </svg>
+                1350
+              </span>
             </div>
           </div>
         </li>
@@ -126,13 +131,12 @@
               <p class="gallery__author">Автор фото: Сергей</p>
             </div>
             <div class="gallery__like">
-              <svg class="gallery__icon gallery__icon--veg" width="23" height="21" viewBox="0 0 23 21" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path opacity=".3"
-                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
-                  fill="#000" />
-              </svg>
-              <span class="gallery__amount">143</span>
+              <span class="gallery__amount">
+                <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21">
+                  <use href="./img/sprite.svg#like"></use>
+                </svg>
+                143
+              </span>
             </div>
           </div>
         </li>
@@ -151,13 +155,12 @@
               <p class="gallery__author">Автор фото: Пётр</p>
             </div>
             <div class="gallery__like">
-              <svg class="gallery__icon gallery__icon--road" width="23" height="21" viewBox="0 0 23 21" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path opacity=".3"
-                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
-                  fill="#000" />
+              <span class="gallery__amount">
+              <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21">
+                <use href="./img/sprite.svg#like"></use>
               </svg>
-              <span class="gallery__amount">96</span>
+              96
+            </span>
             </div>
           </div>
         </li>
@@ -176,13 +179,12 @@
               <p class="gallery__author">Автор фото: Антон</p>
             </div>
             <div class="gallery__like">
-              <svg class="gallery__icon gallery__icon--bridge" width="23" height="21" viewBox="0 0 23 21" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path opacity=".3"
-                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
-                  fill="#000" />
+              <span class="gallery__amount">
+              <svg class="gallery__icon" width="23" height="21" viewBox="0 0 23 21">
+                <use href="./img/sprite.svg#like"></use>
               </svg>
-              <span class="gallery__amount">254</span>
+              254
+            </span>
             </div>
           </div>
         </li>

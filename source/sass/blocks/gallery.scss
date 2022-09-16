@@ -145,14 +145,6 @@
 
 .gallery__like {
     margin: 0;
-    
-    @media (min-width:$tablet-width) {
-        position: relative;
-    }    
-    
-    @media (min-width:$desktop-width) { 
-        position: relative;
-    }
 }
 
 .gallery__image-title {
@@ -174,56 +166,16 @@
 }
 
 .gallery__icon {
-    margin-right: 10px;
+    margin-right: 14px;
+    color: rgba(0, 0, 0, 0.3);
+    vertical-align: sub;
 
     @media (min-width:$tablet-width) {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin-right: 0;
+        margin-right: 9px;
     }
 
     @media (min-width:$desktop-width) { 
-        fill: #ffffff;
-        position: absolute;
-        bottom: 3px;
-        right: 41px;
-        margin-right: 0;
-    }
-}
-
-.gallery__icon--vast {
-    @media (min-width:$tablet-width) {
-        bottom: 3px;
-        right: 41px;
-    }
-}
-
-.gallery__icon--veg {
-    @media (min-width:$tablet-width) {
-        bottom: 3px;
-        right: 33px;
-    }
-}
-
-.gallery__icon--road {
-    @media (min-width:$tablet-width) {
-        bottom: 3px;
-        right: 26px;
-    }
-}
-
-.gallery__icon--bridge {
-    @media (min-width:$tablet-width) {
-        bottom: 3px;
-        right: 33px;
-    }
-}
-
-.gallery__icon path {
-    @media (min-width:$desktop-width) { 
-        opacity: 100%;
-        fill: #ffffff;
+        color: #ffffff;
     }
 }
 
@@ -234,6 +186,7 @@
 
     @media (min-width:$desktop-width) { 
         color: #ffffff;
+        opacity: 100%;
     }
 }
 
