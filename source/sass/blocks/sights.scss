@@ -166,12 +166,12 @@
 
 .sights__variant>input:checked+span::before {
     background-image: url(../../img/check.svg);
-    background-size: 16px 16px;
+    background-size: 22px 16px;
     background-repeat: no-repeat;
 }
 
 .sights__variant>input:checked+span:active::before {
     background-image: url(../../img/checkgray.svg);
-    background-size: 16px 16px;
+    background-size: 22px 16px;
     background-repeat: no-repeat;
 }
