@@ -64,6 +64,7 @@
         background-image: url("../../img/sedona-street/streetdesktop.jpg");
         width: 800px;
         height: 256px;
+        background-size: 100%;
 
         @media (min-resolution: 2dppx) {
             background-image: url("../../img/sedona-street/streetdesktop@2x.jpg");
