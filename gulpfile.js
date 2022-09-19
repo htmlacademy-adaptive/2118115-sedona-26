@@ -69,16 +69,6 @@ const svg  = () => {
     .pipe(gulp.dest('build/img'))
 }
 
-export const sprite = () => {
-  return gulp.src ('source/img/sprite.svg')
-  .pipe(svgo())
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'))
-} 
-
 const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
@@ -131,7 +121,6 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
     createWebp
   ),
 );
@@ -145,7 +134,6 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    sprite,
     createWebp
   ),
   gulp.series(
