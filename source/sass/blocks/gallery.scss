@@ -167,7 +167,7 @@
 
 .gallery__icon {
     margin-right: 14px;
-    color: rgba(0, 0, 0, 0.3);
+    fill: rgba(0, 0, 0, 0.3);
     vertical-align: sub;
 
     @media (min-width:$tablet-width) {
@@ -175,7 +175,7 @@
     }
 
     @media (min-width:$desktop-width) { 
-        color: #ffffff;
+        fill: #ffffff;
     }
 }
 

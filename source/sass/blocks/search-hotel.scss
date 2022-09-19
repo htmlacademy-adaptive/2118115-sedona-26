@@ -42,6 +42,14 @@
     margin: 0;
     margin-bottom: 30px;
     padding: 0; 
+
+    @media (min-width:$tablet-width) {
+        font-size: 30px;
+    }
+
+    @media (min-width:$desktop-width) {
+        font-size: 30px;
+    }
 }
 
 .search-hotel__description {
