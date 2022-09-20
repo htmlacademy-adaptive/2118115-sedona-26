@@ -1,0 +1,73 @@
+@import "../mixins.scss";
+@import "../variable.scss";
+
+.modal-well-done {
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+  width: 320px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 640px;    
+  }
+}
+
+.modal-well-done__content {
+    padding: 44px 39px 34px 37px;
+    
+    @media (min-width: $tablet-width) {
+        padding: 57px 99px 34px 97px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 51px 99px 34px 97px;    
+    }
+}
+
+.modal-well-done__title {
+    @include title-style-black;
+    margin: 0;
+    margin-bottom: 34px;
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.modal-well-done__text {
+    @include description-style-black;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-well-done__modal-button {
+    background-color: #F2F2F2;
+}
+
+.modal-well-done__button {
+    @include title-style-white;
+    text-transform: uppercase;
+    border: none;
+    padding: 18px 50px 14px 50px;
+    margin: 20px;
+    width: 280px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+        margin: 44px 91px;
+        width: 458px;
+    }
+
+    &:hover {
+        background-color:#669EC0;
+    }
+
+    &:active {
+        background-color:#5496BD;
+        color: rgba(255, 255, 255, 0.3);
+    }
+}
