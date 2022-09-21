@@ -25,6 +25,7 @@
 
     @media (min-width:$tablet-width) {
         font-size: 30px;
+        margin-bottom: 32px;
     }
 }
 
@@ -35,14 +36,14 @@
 }
 
 .intro-catalog__wrapper {
-    padding: 37px 20px 25px 20px;
+    padding: 37px 20px 37px 20px;
     margin: 0;
 
     @media (min-width:$tablet-width) {
-        padding: 66px 165px 67px 165px;
+        padding: 66px 165px 82px 165px;
     }
 
     @media (min-width:$desktop-width) {
-        padding: 100px 380px 65px 380px;
+        padding: 91px 380px 88px 380px;
     }
 }

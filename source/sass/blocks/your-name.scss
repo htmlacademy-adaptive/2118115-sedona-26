@@ -54,6 +54,12 @@
 
     @media (min-width:$tablet-width) {
         font-size: 21px;
+        margin-left: 43px;
+        margin-bottom: 27px;
+    }
+
+    @media (min-width:$desktop-width) {
+        margin-left: 63px;
     }
 }
 
@@ -67,6 +73,7 @@
 
 .your-name__name small {
     margin-left: 16px;
+    font-size: 14px;
 }
 
 .your-name__input-your-name {
