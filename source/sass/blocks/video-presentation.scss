@@ -8,10 +8,12 @@
 
     @media (min-width:$tablet-width) {
         width: 768px;
+        margin-bottom: 42px;
     }
 
     @media (min-width:$desktop-width) {
         width: 1200px;
+        margin-bottom: 85px;
     }
 }
 
@@ -19,12 +21,17 @@
     padding: 17px 26px 38px 28px;
 
     @media (min-width:$tablet-width) {
-        padding: 0 162px 66px 161px;
+        padding: 0 162px 89px 161px;
     }
 
     @media (min-width:$desktop-width) { 
-        padding: 62px 378px 64px 377px;;
+        padding: 62px 378px 87px 377px;;
     }
+}
+
+.video-presentation__video-image {
+    display: block;
+    margin: auto;
 }
 
 @import"../mixins.scss";
@@ -32,7 +39,13 @@
 .video-presentation__title {
     @include title-style-black;
     margin: 0;
+    margin-bottom: 27px;
     padding: 0;
+
+    @media (min-width:$tablet-width) {
+        font-size: 30px;
+        margin-bottom: 32px;
+    }
 }
 
 .video-presentation__description {

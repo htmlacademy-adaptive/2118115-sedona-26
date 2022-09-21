@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-bottom: 17px;
 
     @import "../variable.scss";
 
@@ -17,6 +18,7 @@
     @media (min-width:$desktop-width) {
         width: 1200px;
         padding-top: 56px;
+        padding-bottom: 32px;
     }
 }
 
@@ -46,7 +48,7 @@
 }
 
 .impression__item {
-    margin-bottom: 16px;
+    margin-bottom: 9px;
 
     @import "../variable.scss";
 
@@ -65,6 +67,17 @@
     margin-bottom: 0;    
 }
 
+.impression__item:nth-child(2) {
+    @media (min-width:$tablet-width) {
+        margin-left: 9px;
+        width: 45%;
+    }    
+
+    @media (min-width:$desktop-width) {
+        width: 33%;
+    }
+}
+
 .impression__title {
     @include title-style-black;
     margin: 0;
@@ -73,10 +86,11 @@
     @media (min-width:$tablet-width) {
         font-size: 21px;
         position: relative;
+        margin-bottom: 28px;
     }
 
     @media (min-width:$desktop-width) {
-        margin-bottom: 28px;
+        margin-bottom: 45px;
     }
 }
 

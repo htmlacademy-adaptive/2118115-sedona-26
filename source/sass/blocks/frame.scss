@@ -1,0 +1,13 @@
+@import "../variable.scss";
+
+.frame {
+    width: 320px;
+    height: 57px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media (min-width:$tablet-width) {
+        display: none;
+    }
+}

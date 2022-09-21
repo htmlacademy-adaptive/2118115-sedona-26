@@ -1,0 +1,18 @@
+@import "../variable.scss";
+
+.frame-form-tablet {
+    display: none;
+
+    @media (min-width:$tablet-width) {
+        display: block;
+        position: absolute;
+        width: 768px;        
+        height: 57px;    
+        bottom: 0;
+        left: 0;    
+    }
+
+    @media (min-width:$desktop-width) {
+        display: none;
+    }
+}
