@@ -28,6 +28,7 @@
 
     @media (min-width:$desktop-width) { 
         padding: 62px 378px 87px 377px;;
+<<<<<<< HEAD
     }
 }
 
@@ -45,7 +46,14 @@
     @media (min-width:$desktop-width) {
         width: 800px;
         height: auto;
+=======
+>>>>>>> eb21cccde58b4efcdffe18b81a330f6947860951
     }
+}
+
+.video-presentation__video-image {
+    display: block;
+    margin: auto;
 }
 
 @import"../mixins.scss";
