@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,46 +8,19 @@
   <link rel="icon" href="./img/favicon-32x32.png" type="image/png">
   <link rel="manifest" href="./manifest.webmanifest">
   <title>HTML Academy: Седона</title>
-  <style>
-    .copyright__link {
-      color: #000000;
-    }
-
-    .copyright__link:hover {
-      color: #81B3D2;
-    }
-
-    .copyright__link:active {
-      color: #B3B3B3;
-    }
-
-    .copyright__svg {
-      vertical-align: middle;
-      margin-left: 10px;
-    }
-
-    .main-footer__svg:active {
-      opacity: 60%;
-    }
-
-  </style>
 </head>
-
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="./index.html">
       <img class="logo__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
     </a>
-
-    <nav class="main-navigation main-navigation--closed">
+    <nav class="main-navigation main-navigation--opened main-navigation--nojs">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню навигации</span>
       </button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="index.html">
-            Главная
-          </a>
+          <a class="main-navigation__link" href="index.html">Главная</a>
         </li>
         <li class="main-navigation__item">
           <a class="main-navigation__link main-navigation__link--active">
@@ -96,15 +68,21 @@
       <h2 class="visually-hidden">Фото-и видео-галерея</h2>
       <ul class="gallery__list">
         <li class="gallery__item">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="./img/catalog/vast-desktop-webp.webp 1x, ./img/catalog/vast-desktop-webp@2x.webp 2x,">
-            <source type="image/webp" media="(min-width: 768px)"  srcset="./img/catalog/vasttablet-webp.webp 1x, ./img/catalog/vasttablet-webp@2x.webp 2x">
-            <source type="image/webp" srcset="./img/catalog/vast-webp.webp 1x, ./img/catalog/vast-webp@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="./img/catalog/vast-desktop.jpg 1x, ./img/catalog/vast-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="./img/catalog/vasttablet.jpg 1x, ./img/catalog/vasttablet@2x.jpg 2x">
-            <img class="gallery__image" src="./img/catalog/vast.jpg" srcset="./img/catalog/vast@2x.jpg 2x"
-              alt="Неродные просторы">
-          </picture>
+          <a class="gallery__link-img" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./img/catalog/vast-desktop-webp.webp 1x, ./img/catalog/vast-desktop-webp@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./img/catalog/vasttablet-webp.webp 1x, ./img/catalog/vasttablet-webp@2x.webp 2x">
+              <source type="image/webp" srcset="./img/catalog/vast-webp.webp 1x, ./img/catalog/vast-webp@2x.webp 2x">
+              <source media="(min-width: 1200px)"
+                srcset="./img/catalog/vast-desktop.jpg 1x, ./img/catalog/vast-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/catalog/vasttablet.jpg 1x, ./img/catalog/vasttablet@2x.jpg 2x">
+              <img class="gallery__image" src="./img/catalog/vast.jpg" srcset="./img/catalog/vast@2x.jpg 2x"
+                alt="Неродные просторы">
+            </picture>
+          </a>
           <div class="gallery__text">
             <div class="gallery__description">
               <h2 class="gallery__image-title">Неродные просторы</h2>
@@ -121,14 +99,16 @@
           </div>
         </li>
         <li class="gallery__item">
-          <picture>
-            <source media="(min-width: 1200px)"
-              srcset="./img/catalog/vegetation-desktop.jpg 1x, ./img/catalog/vegetation-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="./img/catalog/vegetationtablet.jpg 1x, ./img/catalog/vegetationtablet@2x.jpg 2x">
-            <img class="gallery__image" src="./img/catalog/vegetation.jpg" srcset="./img/catalog/vegetation@2x.jpg 2x"
-              alt="Местная растительность">
-          </picture>
+          <a class="gallery__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/catalog/vegetation-desktop.jpg 1x, ./img/catalog/vegetation-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/catalog/vegetationtablet.jpg 1x, ./img/catalog/vegetationtablet@2x.jpg 2x">
+              <img class="gallery__image" src="./img/catalog/vegetation.jpg" srcset="./img/catalog/vegetation@2x.jpg 2x"
+                alt="Местная растительность">
+            </picture>
+          </a>
           <div class="gallery__text">
             <div class="gallery__description">
               <h2 class="gallery__image-title">Местная растительность</h2>
@@ -145,14 +125,16 @@
           </div>
         </li>
         <li class="gallery__item">
-          <picture>
-            <source media="(min-width: 1200px)"
-              srcset="./img/catalog/northroad-desktop.jpg 1x, ./img/catalog/northroad-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="./img/catalog/northroadtablet.jpg 1x, ./img/catalog/northroadtablet@2x.jpg 2x,">
-            <img class="gallery__image" src="./img/catalog/northroad.jpg" srcset="./img/catalog/northroad@2x.jpg 2x"
-              alt="Дорога на север">
-          </picture>
+          <a class="gallery__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/catalog/northroad-desktop.jpg 1x, ./img/catalog/northroad-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/catalog/northroadtablet.jpg 1x, ./img/catalog/northroadtablet@2x.jpg 2x">
+              <img class="gallery__image" src="./img/catalog/northroad.jpg" srcset="./img/catalog/northroad@2x.jpg 2x"
+                alt="Дорога на север">
+            </picture>
+          </a>
           <div class="gallery__text">
             <div class="gallery__description">
               <h2 class="gallery__image-title">Дорога на север</h2>
@@ -169,14 +151,16 @@
           </div>
         </li>
         <li class="gallery__item">
-          <picture>
-            <source media="(min-width: 1200px)"
-              srcset="./img/catalog/bridgeofdavil-desktop.jpg 1x, ./img/catalog/bridgeofdavil-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)"
-              srcset="./img/catalog/bridgeofdavil-tablet.jpg 1x, ./img/catalog/bridgeofdavil-tablet@2x.jpg 2x">
-            <img class="gallery__image" src="./img/catalog/bridgeofdavil.jpg"
-              srcset="./img/catalog/bridgeofdavil@2x.jpg 2x" alt="Мост Дьявола">
-          </picture>
+          <a class="gallery__link-img" href="#">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="./img/catalog/bridgeofdavil-desktop.jpg 1x, ./img/catalog/bridgeofdavil-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="./img/catalog/bridgeofdavil-tablet.jpg 1x, ./img/catalog/bridgeofdavil-tablet@2x.jpg 2x">
+              <img class="gallery__image" src="./img/catalog/bridgeofdavil.jpg"
+                srcset="./img/catalog/bridgeofdavil@2x.jpg 2x" alt="Мост Дьявола">
+            </picture>
+          </a>
           <div class="gallery__text">
             <div class="gallery__description">
               <h2 class="gallery__image-title">Мост Дьявола</h2>
@@ -202,10 +186,17 @@
           подорожали в очередной раз!</p>
       </div>
       <picture>
-        <source media="(min-width: 1200px)" srcset="./img/video-desktop.jpg">
-        <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg">
-        <img class="video-presentation__video-image" src="./img/videoimg.jpg" alt="Видеопрезентация Седоны">
+        <source media="(min-width: 1200px)" srcset="./img/video-desktop.jpg 1x, ./img/video-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./img/video-tablet.jpg 1x, ./img/video-tablet@2x.jpg 2x">
+        <img class="video-presentation__video-image" src="./img/video-mobile.jpg" srcset="./img/video-mobile@2x.jpg"
+          alt="Видеопрезентация Седоны">
       </picture>
+      <button class="video-presentation__play" type="button">
+        <span class="visually-hidden">Воспроизвести видеозапись</span>
+        <svg width="48" height="54" viewBox="0 0 48 54">
+          <use href="./img/sprite.svg#play"></use>
+        </svg>
+      </button>
     </section>
   </main>
   <footer class="catalog-footer">
@@ -234,7 +225,7 @@
           </a>
         </li>
       </ul>
-      <div class="main-footer__copyright copyright">
+      <div class="catalog-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
           <svg class="copyright__svg" width="27" height="35">
             <use href="./img/sprite.svg#logotype"></use>

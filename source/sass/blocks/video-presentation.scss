@@ -3,6 +3,7 @@
     color: #000000;
     width: 320px;
     text-align: center;
+    position: relative;
 
     @import "../variable.scss";
 
@@ -19,6 +20,7 @@
 
 .video-presentation__wrapper {
     padding: 17px 26px 38px 28px;
+    
 
     @media (min-width:$tablet-width) {
         padding: 0 162px 89px 161px;
@@ -26,6 +28,26 @@
 
     @media (min-width:$desktop-width) { 
         padding: 62px 378px 87px 377px;;
+<<<<<<< HEAD
+    }
+}
+
+.video-presentation__video-image {
+    display: block;
+    margin: auto;
+    width: 280px;
+    height: auto;
+
+    @media (min-width:$tablet-width) {
+        width: 648px;
+        height: auto;
+    }
+
+    @media (min-width:$desktop-width) {
+        width: 800px;
+        height: auto;
+=======
+>>>>>>> eb21cccde58b4efcdffe18b81a330f6947860951
     }
 }
 
@@ -53,4 +75,27 @@
     margin: 0;
     padding: 0;
 
+}
+
+.video-presentation__play {
+    position: relative;
+    top: 234px;
+    left: 144px;
+    width: 60px;
+    height: 60px; 
+    position: absolute;
+    background: transparent; 
+    border: none;
+    cursor: pointer;
+
+
+    @media (min-width:$tablet-width) {
+        top: 412px;
+        left: 359px;
+    }
+
+    @media (min-width:$desktop-width) {
+        top: 472px;
+        left: 576px;        
+    }
 }

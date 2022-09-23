@@ -91,12 +91,9 @@
 
     &:active {
         background-color: #ffffff;
-        border: 4px #E5E5E5 solid;
+        outline: 4px #E5E5E5 solid;
     }
 
-    &:focus-visible{ 
-        outline: none;
-    }
 }
 
 .contacts__input-contacts-email {
@@ -123,10 +120,7 @@
 
     &:active {
         background-color: #ffffff;
-        border: 4px #E5E5E5 solid;
+        outline: 4px #E5E5E5 solid;
     }
 
-    &:focus-visible{ 
-        outline: none;
-    }
 }

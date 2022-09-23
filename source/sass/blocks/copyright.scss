@@ -8,4 +8,18 @@
 .copyright__link {
     text-decoration: none;
     vertical-align: middle;
+    color: #000000;
+
+    &:hover {
+        color: #81B3D2;
+    }
+
+    &:active {
+        color: #B3B3B3;
+    }
 }
+
+.copyright__svg {
+    vertical-align: middle;
+    margin-left: 10px;
+  }

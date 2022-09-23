@@ -203,3 +203,7 @@
     background-size: 22px 16px;
     background-repeat: no-repeat;
 }
+
+.sights__variant>input:focus+span::before {
+    outline: 2px #000000 solid;
+  }

@@ -6,32 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="./favicon.ico">
-  <link rel="icon" href="./img/favicon-32x32.png" type="image/png"> 
+  <link rel="icon" href="./img/favicon-32x32.png" type="image/png">
   <link rel="manifest" href="./manifest.webmanifest">
   <title>HTML Academy: Седона</title>
-  <style>
-    .copyright__link {
-      color: #000000;
-    }
-
-    .copyright__link:hover {
-      color: #81B3D2;
-    }
-
-    .copyright__link:active {
-      color: #B3B3B3;
-    }
-
-    .copyright__svg {
-      vertical-align: middle;
-      margin-left: 10px;
-    }
-
-    .form-footer__svg:active {
-      opacity: 60%;
-    }
-
-  </style>
 </head>
 
 <body class="page__body">
@@ -40,7 +17,7 @@
       <img class="logo__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
     </a>
 
-    <nav class="main-navigation main-navigation--closed">
+    <nav class="main-navigation main-navigation--opened main-navigation--nojs">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню навигации</span>
       </button>
@@ -51,7 +28,7 @@
           </a>
         </li>
         <li class="main-navigation__item">
-          <a  class="main-navigation__link" href="catalog.html">
+          <a class="main-navigation__link" href="catalog.html">
             Фото и видео
           </a>
         </li>
@@ -88,7 +65,8 @@
       <h1 class="visually-hidden">Отзыв о Седоне</h1>
       <div class="intro-form__wrapper">
         <h2 class="intro-form__title">Оставьте свой отзыв</h2>
-        <p class="intro-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+        <p class="intro-form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
+          вами
           достопримечательностях</p>
       </div>
     </section>
@@ -120,7 +98,7 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <label class="contacts__name"><small>Контактный телефон*:</small>
-                <input class="contacts__input-contacts-phone" type="tel" placeholder="Введите телефон">                
+                <input class="contacts__input-contacts-phone" type="tel" placeholder="Введите телефон">
               </label>
             </li>
             <li class="contacts__item">
@@ -142,7 +120,7 @@
             <li class="impression__item">
               <label class="impression__variant">
                 <input class="impression__impression-input" type="radio" name="impression" value="negative">
-                <span>Скорее отрицательное</span>         
+                <span>Скорее отрицательное</span>
               </label>
             </li>
             <li class="impression__item">
@@ -193,7 +171,7 @@
           <p class="button-review__legend">
             <small>* — обязательные поля</small>
           </p>
-        </div>  
+        </div>
       </form>
     </section>
   </main>
@@ -238,18 +216,19 @@
       <section class="modal-error__content">
         <h2 class="modal-error__title">Что-то пошло не так!</h2>
         <p class="modal-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal-error__button" type="button">OK</button>        
+        <button class="modal-error__button" type="button">OK</button>
       </section>
-    </div>    
+    </div>
   </div>
   <div class="modal-container-two modal-container-two--close">
     <div class="modal-container-two__well-done modal-well-done">
       <section class="modal-well-done__content">
         <h2 class="modal-well-done__title">Ваш отзыв отправлен!</h2>
-        <p class="modal-well-done__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы опубликуем его на сайте</p>
+        <p class="modal-well-done__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы
+          опубликуем его на сайте</p>
       </section>
-      <div class="modal-well-done__modal-button">        
-        <button class="modal-well-done__button" type="button">Закрыть окно</button>   
+      <div class="modal-well-done__modal-button">
+        <button class="modal-well-done__button" type="button">Закрыть окно</button>
       </div>
     </div>
   </div>

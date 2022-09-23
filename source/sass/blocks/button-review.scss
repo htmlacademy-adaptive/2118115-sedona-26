@@ -1,5 +1,6 @@
 .button-review {
     width: 280px;
+    margin: 0 auto;
 
     @media (min-width:$tablet-width) {
         width: 648px;
@@ -22,7 +23,7 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: #81B3D2;
-    padding: 20px 45px 14px 45px;
+    padding: 20px 50px 14px 45px;
     border: none;
     box-sizing: border-box;
     cursor: pointer;
@@ -45,10 +46,9 @@
 
 }
 
-.button-review__legend small {
-    margin: 0;
+.button-review__legend {
+     margin: 0;
     text-align: end;
     color: #333333;
     opacity: 60%;
-    font-size: 14px;
 }

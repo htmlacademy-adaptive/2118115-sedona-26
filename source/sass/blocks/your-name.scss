@@ -83,7 +83,10 @@
     padding: 16px;
     margin: 0;
     box-sizing: border-box;
-    @include title-style-black;
+    font-family: "PT Sans", "Georgia";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
     background-color: #F2F2F2;
 
     @media (min-width:$desktop-width) {
@@ -96,11 +99,7 @@
 
     &:active {
         background-color: #ffffff;
-        border: 4px #E5E5E5 solid;
+        outline: 4px #E5E5E5 solid;
 
-    }
-
-    &:focus-visible{ 
-        outline: none;
     }
 }

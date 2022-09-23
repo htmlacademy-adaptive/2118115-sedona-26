@@ -77,14 +77,17 @@
 
 .emotions__emotions-form {
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 9px;
 }
 
 .emotions__emotions-input {
     width: 279px;
     height: 150px;
     border: none;
-    @include title-style-black;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
     background-color: #F2F2F2;
     color: #000000;
     opacity: 30%;

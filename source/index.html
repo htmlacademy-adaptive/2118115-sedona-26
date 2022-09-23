@@ -9,29 +9,6 @@
   <link rel="icon" href="./img/favicon-32x32.png" type="image/png">
   <link rel="manifest" href="./manifest.webmanifest">
   <title>HTML Academy: Седона</title>
-  <style>
-    .copyright__link {
-      color: #000000;
-    }
-
-    .copyright__link:hover {
-      color: #81B3D2;
-    }
-
-    .copyright__link:active {
-      color: #B3B3B3;
-    }
-
-    .copyright__svg {
-      vertical-align: middle;
-      margin-left: 10px;
-    }
-
-    .main-footer__svg:active {
-      opacity: 60%;
-    }
-
-  </style>
 </head>
 
 <body class="page__body">
@@ -40,7 +17,7 @@
       <img class="logo__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
     </a>
 
-    <nav class="main-navigation main-navigation--closed">
+    <nav class="main-navigation main-navigation--opened main-navigation--nojs">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню навигации</span>
       </button>
@@ -71,7 +48,7 @@
   <main class="main-container">
     <section class="greeting">
       <h1 class="visually-hidden">Добро пожаловать в прекрасную Седону</h1>
-      <svg  class="greeting__welcome logo-sedona" width="282" height="214" viewBox="0 0 282 214">
+      <svg class="greeting__welcome logo-sedona" width="282" height="214" viewBox="0 0 282 214">
         <use href="./img/sprite.svg#welcome"></use>
       </svg>
       <svg class="frame" width="320" height="57" viewBox="0 0 320 57">
@@ -87,8 +64,7 @@
     <section class="intro">
       <h2 class="visually-hidden">Седона</h2>
       <div class="intro__wrapper">
-        <h2 class="intro__title">Седона — небольшой городок в Аризоне,</h2>
-        <h2 class="intro__title--two">заслуживающий большего!</h2>
+        <h2 class="intro__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
         <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <svg class="intro__svg" width="320" height="37" viewBox="0 0 320 37">
@@ -109,8 +85,7 @@
         <li class="advantages__item clarification-list">
           <ul class="clarification-list__list">
             <li class="clarification-list__item">
-              <svg class="clarification-list__svg"
-                viewBox="0 0 40 40">
+              <svg class="clarification-list__svg" viewBox="0 0 40 40">
                 <use href="./img/sprite.svg#home"></use>
               </svg>
               <div class="clarification-list__wrapper clarification-list__wrapper--home">
@@ -119,8 +94,7 @@
               </div>
             </li>
             <li class="clarification-list__item">
-              <svg class="clarification-list__svg"
-                viewBox="0 0 40 40">
+              <svg class="clarification-list__svg" viewBox="0 0 40 40">
                 <use href="./img/sprite.svg#food"></use>
               </svg>
               <div class="clarification-list__wrapper clarification-list__wrapper--food">
@@ -129,13 +103,13 @@
               </div>
             </li>
             <li class="clarification-list__item">
-              <svg class="clarification-list__svg"
-                viewBox="0 0 40 40">
+              <svg class="clarification-list__svg" viewBox="0 0 40 40">
                 <use href="./img/sprite.svg#souvenirs"></use>
               </svg>
               <div class="clarification-list__wrapper clarification-list__wrapper--souvenirs">
                 <h2 class="clarification-list__title">Сувениры</h2>
-                <p class="clarification-list__description clarification-list__description--souvenirs">Не только китайского, но и местного производства!</p>
+                <p class="clarification-list__description clarification-list__description--souvenirs">Не только
+                  китайского, но и местного производства!</p>
               </div>
             </li>
           </ul>
@@ -179,9 +153,12 @@
       <h2 class="visually-hidden">Бронирование гостиницы</h2>
       <div class="search-hotel__wrapper">
         <h2 class="search-hotel__title">Заинтересовались?</h2>
-        <p class="search-hotel__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+        <p class="search-hotel__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
+          гостиниц в Cедоне</p>
       </div>
-      <button class="hotel-search__button" type="button">Найти гостиницу</button>
+      <a class="search-hotel__link" href="#">
+        <button class="search-hotel__button" type="button">Найти гостиницу</button>
+      </a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта Аризоны</h2>
@@ -199,7 +176,7 @@
           <a class="main-footer__link" href="#">
             <svg class="main-footer__svg" viewBox="0 0 24 24">
               <use href="./img/sprite.svg#vk"></use>
-            </svg>            
+            </svg>
           </a>
         </li>
         <li class="main-footer__item">
@@ -220,7 +197,7 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
           <svg class="copyright__svg" width="27" height="35">
-            <use  href="./img/sprite.svg#logotype"></use>
+            <use href="./img/sprite.svg#logotype"></use>
           </svg>
         </a>
       </div>
