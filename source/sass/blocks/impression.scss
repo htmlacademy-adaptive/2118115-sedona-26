@@ -185,3 +185,7 @@
     background-size: 16px 16px;
     background-repeat: no-repeat;
 }
+
+.impression__variant>input:focus:not(:checked)+span::before {
+    outline: 2px #000000 solid;
+}
