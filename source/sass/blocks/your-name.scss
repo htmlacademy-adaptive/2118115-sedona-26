@@ -54,6 +54,12 @@
 
     @media (min-width:$tablet-width) {
         font-size: 21px;
+        margin-left: 43px;
+        margin-bottom: 27px;
+    }
+
+    @media (min-width:$desktop-width) {
+        margin-left: 63px;
     }
 }
 
@@ -67,6 +73,7 @@
 
 .your-name__name small {
     margin-left: 16px;
+    font-size: 14px;
 }
 
 .your-name__input-your-name {
@@ -76,7 +83,10 @@
     padding: 16px;
     margin: 0;
     box-sizing: border-box;
-    @include title-style-black;
+    font-family: "PT Sans", "Georgia";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
     background-color: #F2F2F2;
 
     @media (min-width:$desktop-width) {
@@ -89,11 +99,7 @@
 
     &:active {
         background-color: #ffffff;
-        border: 4px #E5E5E5 solid;
+        outline: 4px #E5E5E5 solid;
 
-    }
-
-    &:focus-visible{ 
-        outline: none;
     }
 }

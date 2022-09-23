@@ -1,5 +1,5 @@
 @mixin title-style-black {
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans","Georgia";
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -8,7 +8,7 @@
 }
 
 @mixin description-style-black {
-    font-family: inherit;
+    font-family: "PT Sans""Georgia";
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -17,7 +17,7 @@
 }
 
 @mixin title-style-white {
-    font-family: inherit;
+    font-family: "PT Sans""Georgia";
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
@@ -26,7 +26,7 @@
 }
 
 @mixin description-style-white {
-    font-family: inherit;
+    font-family: "PT Sans""Georgia";
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -35,7 +35,7 @@
 }
 
 @mixin gallery-title {
-    font-family: inherit;
+    font-family: "PT Sans""Georgia";
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
@@ -43,7 +43,7 @@
 }
 
 @mixin gallery-description {
-    font-family: inherit;
+    font-family: "PT Sans""Georgia";
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;

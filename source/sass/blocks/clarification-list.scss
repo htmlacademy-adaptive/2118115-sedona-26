@@ -73,9 +73,12 @@
 }
 
 .clarification-list__wrapper--food {
+    margin-left: 52px;
+
     @media (min-width:$tablet-width) {
         padding-left: 50px;
         padding-right: 50px;
+        margin-left: 0;
     }
 
     @media (min-width:$desktop-width) {
@@ -84,9 +87,12 @@
 }
 
 .clarification-list__wrapper--souvenirs {
+    margin-left: 44px;
+
     @media (min-width:$tablet-width) {
         padding-left: 32px;
         padding-right: 31px;
+        margin-left: 0;
     }
 
     @media (min-width:$desktop-width) {
@@ -105,7 +111,7 @@
     @media (min-width:$tablet-width) {
         margin-left: 0;
         font-size: 21px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
     }
 }
 
@@ -119,27 +125,34 @@
     @media (min-width:$tablet-width) {
         margin-left: 0;
     }
+
+    
+}
+
+.clarification-list__description--souvenirs {
+    @media (min-width:$desktop-width) {
+        margin: 0 1px 0 2px;
+    }
 }
 
 .clarification-list__svg {
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0px;
 
     @media (min-width:$tablet-width) {
-        width: 75px;
-        height: 72px;
-        top: 60px;
+        width: 76px;
+        height: 77px;
+        top: 56px;
         left: 90px;
     }
     
     @media (min-width:$desktop-width) {
-        top: 59px;
+        top: 56px;
         left: 161px;
-    }
-
-    
+    }    
 }
+
 

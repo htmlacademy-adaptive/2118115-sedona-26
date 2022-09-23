@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    padding-bottom: 34px;
 
     @import "../variable.scss";
 
@@ -44,7 +45,8 @@
 
     @media (min-width:$tablet-width) {
         font-size: 21px;
-        margin-left: -17px;
+        margin-left: -35px;
+        margin-bottom: 27px;
     }
 
     @media (min-width:$desktop-width) {
@@ -62,6 +64,7 @@
 
 .contacts__name small {
     margin-left: 16px;
+    font-size: 14px;
 }
 
 .contacts__input-contacts-phone {
@@ -88,12 +91,9 @@
 
     &:active {
         background-color: #ffffff;
-        border: 4px #E5E5E5 solid;
+        outline: 4px #E5E5E5 solid;
     }
 
-    &:focus-visible{ 
-        outline: none;
-    }
 }
 
 .contacts__input-contacts-email {
@@ -120,10 +120,7 @@
 
     &:active {
         background-color: #ffffff;
-        border: 4px #E5E5E5 solid;
+        outline: 4px #E5E5E5 solid;
     }
 
-    &:focus-visible{ 
-        outline: none;
-    }
 }

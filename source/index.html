@@ -9,29 +9,6 @@
   <link rel="icon" href="./img/favicon-32x32.png" type="image/png">
   <link rel="manifest" href="./manifest.webmanifest">
   <title>HTML Academy: Седона</title>
-  <style>
-    .copyright__link {
-      color: #000000;
-    }
-
-    .copyright__link:hover {
-      color: #81B3D2;
-    }
-
-    .copyright__link:active {
-      color: #B3B3B3;
-    }
-
-    .copyright__svg {
-      vertical-align: middle;
-      margin-left: 10px;
-    }
-
-    .main-footer__svg:active {
-      opacity: 60%;
-    }
-
-  </style>
 </head>
 
 <body class="page__body">
@@ -40,7 +17,7 @@
       <img class="logo__logo-image" src="./img/logo.svg" width="185" height="96" alt="Логотип сайта Седона">
     </a>
 
-    <nav class="main-navigation main-navigation--closed">
+    <nav class="main-navigation main-navigation--opened main-navigation--nojs">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню навигации</span>
       </button>
@@ -71,24 +48,27 @@
   <main class="main-container">
     <section class="greeting">
       <h1 class="visually-hidden">Добро пожаловать в прекрасную Седону</h1>
-      <svg  class="greeting__welcome logo-sedona" width="282" height="214" viewBox="0 0 282 214">
+      <svg class="greeting__welcome logo-sedona" width="282" height="214" viewBox="0 0 282 214">
         <use href="./img/sprite.svg#welcome"></use>
+      </svg>
+      <svg class="frame" width="320" height="57" viewBox="0 0 320 57">
+        <use href="./img/sprite.svg#frame"></use>
+      </svg>
+      <svg class="frame-tablet" width="768" height="57" viewBox="0 0 768 57">
+        <use href="./img/sprite.svg#frame-tablet"></use>
+      </svg>
+      <svg class="frame-desktop" width="1200" height="57" viewBox="0 0 1200 57">
+        <use href="./img/sprite.svg#frame-desktop"></use>
       </svg>
     </section>
     <section class="intro">
       <h2 class="visually-hidden">Седона</h2>
       <div class="intro__wrapper">
-        <h2 class="intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2 class="intro__title">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
         <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
-      <svg class="intro__svg" width="320" height="37" viewBox="0 0 320 37" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="320" height="37">
-          <path fill="#C4C4C4" d="M0 0h320v37H0z" />
-        </mask>
-        <g mask="url(#a)" fill-rule="evenodd" clip-rule="evenodd" fill="#fff">
-          <path d="M-225 0h384v37L-225 0ZM543 0H159v37L543 0Z" />
-        </g>
+      <svg class="intro__svg" width="320" height="37" viewBox="0 0 320 37">
+        <use href="./img/sprite.svg#frame-down"></use>
       </svg>
     </section>
     <section class="advantages">
@@ -105,8 +85,7 @@
         <li class="advantages__item clarification-list">
           <ul class="clarification-list__list">
             <li class="clarification-list__item">
-              <svg class="clarification-list__svg"
-                viewBox="0 0 40 40">
+              <svg class="clarification-list__svg" viewBox="0 0 40 40">
                 <use href="./img/sprite.svg#home"></use>
               </svg>
               <div class="clarification-list__wrapper clarification-list__wrapper--home">
@@ -115,8 +94,7 @@
               </div>
             </li>
             <li class="clarification-list__item">
-              <svg class="clarification-list__svg"
-                viewBox="0 0 40 40">
+              <svg class="clarification-list__svg" viewBox="0 0 40 40">
                 <use href="./img/sprite.svg#food"></use>
               </svg>
               <div class="clarification-list__wrapper clarification-list__wrapper--food">
@@ -125,43 +103,43 @@
               </div>
             </li>
             <li class="clarification-list__item">
-              <svg class="clarification-list__svg"
-                viewBox="0 0 40 40">
+              <svg class="clarification-list__svg" viewBox="0 0 40 40">
                 <use href="./img/sprite.svg#souvenirs"></use>
               </svg>
               <div class="clarification-list__wrapper clarification-list__wrapper--souvenirs">
                 <h2 class="clarification-list__title">Сувениры</h2>
-                <p class="clarification-list__description">Не только китайского, но и местного производства!</p>
+                <p class="clarification-list__description clarification-list__description--souvenirs">Не только
+                  китайского, но и местного производства!</p>
               </div>
             </li>
           </ul>
         </li>
         <li class="advantages__item item-image">
-          <span class="advantages__bridge-img"></span>
           <div class="advantages__text-wrapper-bridge">
-            <h2 class="advantages__title">Там есть мост дьявола</h2>
+            <h2 class="advantages__title advantages__title--bridge">Там есть мост дьявола</h2>
             <p class="advantages__number">— №2 —</p>
             <p class="advantages__description-two">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
+          <span class="advantages__bridge-img"></span>
         </li>
         <li class="advantages__item alter">
           <ul class="alter__list">
             <li class="alter__item">
-              <div class="alter__wrapper alter__wrapper-area">
+              <div class="alter__wrapper alter__wrapper--area">
                 <h2 class="alter__title">Небольшая площадь</h2>
                 <p class="alter__number">— №3 —</p>
                 <p class="alter__description">Все интересные места находятся очень близко</p>
               </div>
             </li>
             <li class="alter__item">
-              <div class="alter__wrapper alter__wrapper-road">
-                <h2 class="alter__title">Красивая дорога</h2>
+              <div class="alter__wrapper alter__wrapper--road">
+                <h2 class="alter__title alter__title--road">Красивая дорога</h2>
                 <p class="alter__number">— №4 —</p>
                 <p class="alter__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="alter__item">
-              <div class="alter__wrapper alter__wrapper-tourists">
+              <div class="alter__wrapper alter__wrapper--tourists">
                 <h2 class="alter__title">Мало туристов</h2>
                 <p class="alter__number">— №5 —</p>
                 <p class="alter__description">Большинство едет в гранд каньон и толпится там</p>
@@ -175,11 +153,12 @@
       <h2 class="visually-hidden">Бронирование гостиницы</h2>
       <div class="search-hotel__wrapper">
         <h2 class="search-hotel__title">Заинтересовались?</h2>
-        <p class="search-hotel__description">Укажите предполагаемые даты поездки,</p>
-        <p class="search-hotel__description">и мы покажем вам лучшие
-          предложения гостиниц в Cедоне</p>
+        <p class="search-hotel__description">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения
+          гостиниц в Cедоне</p>
       </div>
-      <button class="hotel-search__button" type="button">Найти гостиницу</button>
+      <a class="search-hotel__link" href="#">
+        <button class="search-hotel__button" type="button">Найти гостиницу</button>
+      </a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта Аризоны</h2>
@@ -197,7 +176,7 @@
           <a class="main-footer__link" href="#">
             <svg class="main-footer__svg" viewBox="0 0 24 24">
               <use href="./img/sprite.svg#vk"></use>
-            </svg>            
+            </svg>
           </a>
         </li>
         <li class="main-footer__item">
@@ -218,13 +197,13 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
           <svg class="copyright__svg" width="27" height="35">
-            <use  href="./img/sprite.svg#logotype"></use>
+            <use href="./img/sprite.svg#logotype"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-  <script src="./js/scriptgit.js"></script>
+  <script src="./js/script.js"></script>
 
 </body>
 

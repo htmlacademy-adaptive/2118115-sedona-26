@@ -20,7 +20,7 @@
 }
 
 .intro__wrapper {
-    padding: 32px 25px 32px 25px;
+    padding: 33px 30px 33px 27px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -31,7 +31,7 @@
     }
 
     @media (min-width: $desktop-width) {
-        padding: 59px 349px 44px 357px;
+        padding: 59px 359px 44px 357px;
 
     }
 }
@@ -39,13 +39,15 @@
 .intro__title {
     @include title-style-black;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 36px;
     padding: 0;
 
     @media (min-width: $tablet-width) {
         font-size: 21px;
+        margin-bottom: 30px;
     }
-}
+}    
+
 
 .intro__description {
     @include description-style-black;

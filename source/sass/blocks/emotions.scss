@@ -12,13 +12,13 @@
     @media (min-width:$tablet-width) {
         width: 768px;
         align-content: center;
-        padding-top: 42px;
+        padding-top: 8px;
         padding-bottom: 64px;
     }
 
     @media (min-width:$desktop-width) {
         width: 1200px;
-        padding-top: 56px;
+        padding-top: 49px;
     }
 }
 
@@ -31,6 +31,7 @@
     @media (min-width:$tablet-width) {
         font-size: 21px;
         position: relative;
+        margin-bottom: 30px;
     }
 }
 
@@ -76,13 +77,17 @@
 
 .emotions__emotions-form {
     width: 100%;
+    padding-bottom: 9px;
 }
 
 .emotions__emotions-input {
     width: 279px;
     height: 150px;
     border: none;
-    @include title-style-black;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
     background-color: #F2F2F2;
     color: #000000;
     opacity: 30%;
@@ -94,7 +99,6 @@
     @media (min-width:$tablet-width) {
         width: 648px;
         height: 160px;
-        margin-bottom: 48px;
     }
 
     @media (min-width:$desktop-width) {

@@ -23,11 +23,11 @@
     padding: 36px 20px 28px 20px;
 
     @media (min-width:$tablet-width) {
-        padding: 64px 166px 102px 167px;
+        padding: 64px 166px 105px 167px;
     }
 
     @media (min-width:$desktop-width) {
-        padding: 115px 383px 66px 382px;
+        padding: 105px 383px 70px 382px;
     }
 }
 
@@ -40,12 +40,15 @@
     @media (min-width:$tablet-width) {
         font-size: 30px;
     }
+
+    @media (min-width:$desktop-width) {
+        margin-bottom: 34px;
+    }
 }
 
 .intro-form__description {
     @include description-style-black;
     margin: 0;
-    margin-bottom: 28px;
     padding: 0;
 
     @media (min-width:$tablet-width) {
